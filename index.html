@@ -1,0 +1,316 @@
+LINE1
+  LINE2 {
+"quoted"
+}<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Questa Scale — Google Ads for tannklinikker</title>
+<meta name="description" content="Vi henter implantatpasienter fra Google-søk. Én klinikk per by.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2304203E'/%3E%3Cg fill='%23fff' transform='translate(14 14) scale(0.72)'%3E%3Crect width='100' height='11'/%3E%3Crect y='89' width='100' height='11'/%3E%3Crect width='11' height='100'/%3E%3Crect x='89' width='11' height='31'/%3E%3Crect x='89' y='69' width='11' height='31'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --navy:#04203E; --navy-deep:#02182F; --surface:#052B4F;
+  --accent:#35C9E8; --ink:#E8EFF6; --muted:#94AEC6; --soft:#B4C8DA; --faint:#6F8CA8;
+  --line:rgba(232,239,246,.10); --pad:80px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--navy);color:var(--ink);
+  font-family:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;line-height:1.5}
+h1,h2,h3{font-family:"Archivo","Helvetica Neue",Helvetica,sans-serif;margin:0;
+  letter-spacing:-.02em;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:#7FDFF0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.wrap{max-width:1440px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;
+  letter-spacing:.18em;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);
+  color:var(--navy);font-weight:600;padding:17px 32px;font-size:16px;min-height:54px;
+  border:0;cursor:pointer;transition:background .15s}
+.btn:hover{background:#7FDFF0;color:var(--navy)}
+
+/* DEMO */
+.demo{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+  background:var(--accent);color:var(--navy);padding:11px 24px;text-align:center}
+.demo b{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.14em}
+.demo span{font-size:13px;font-weight:500}
+
+/* Nav */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding-top:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:14px}
+.brand b{font-family:"Archivo",sans-serif;font-size:15px;font-weight:600;letter-spacing:.16em}
+.navlinks{display:flex;align-items:center;gap:32px}
+.navlinks a{font-size:14px;color:var(--muted)}
+.navlinks a:hover{color:var(--ink)}
+.nav .btn{padding:12px 22px;font-size:14px;min-height:44px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:48px;padding:96px 0 88px;align-items:end}
+.hero h1{font-size:clamp(38px,5vw,68px);line-height:1.02;font-weight:700;margin:26px 0 28px}
+.hero p.lead{font-size:19px;line-height:1.62;color:var(--soft);max-width:560px;margin-bottom:40px}
+.heroCta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.heroCta small{font-size:15px;color:var(--muted)}
+.card{border:1px solid rgba(53,201,232,.28);background:var(--surface);padding:34px}
+.card .eyebrow{font-size:11px;letter-spacing:.16em;margin-bottom:22px;display:block}
+.card p{font-size:17px;line-height:1.6;color:#DCE7F1;margin-bottom:26px}
+.cityrow{display:flex;align-items:center;justify-content:space-between;
+  padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.cityrow:last-child{border:0;padding:0;margin:0}
+.cityrow span:first-child{font-size:15px;color:var(--soft)}
+.cityrow span:last-child{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(232,239,246,.12);
+  border-top:1px solid rgba(232,239,246,.12);border-bottom:1px solid rgba(232,239,246,.12)}
+.stat{background:var(--navy);padding:44px 48px}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-size:46px;font-weight:500;
+  color:var(--accent);margin-bottom:12px}
+.stat span{font-size:15px;color:var(--muted)}
+
+/* Sections */
+section{padding:104px 0}
+section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
+.dark{background:var(--navy-deep)}
+.two{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.panel{padding:40px}
+.panel.on{border:1px solid rgba(53,201,232,.30);background:var(--surface)}
+.panel.off{border:1px solid rgba(232,239,246,.13);background:#062744}
+.panel h3{font-size:25px;font-weight:600;margin-bottom:18px}
+.panel .stack{display:flex;flex-direction:column;gap:15px}
+.panel p{font-size:16px;line-height:1.6;color:#C6D6E4}
+.panel.off h3{color:var(--soft)}
+.panel.off p{color:#8FA6BF}
+.panel.off .eyebrow{color:#7A93AC}
+
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px}
+.step{border-top:2px solid var(--accent);padding-top:26px}
+.step b{display:block;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent);margin-bottom:18px}
+.step h3{font-size:23px;font-weight:600;margin-bottom:16px}
+.step p{font-size:16px;line-height:1.6;color:#A9BFD3}
+
+/* Case */
+.case{border:1px solid rgba(53,201,232,.30);background:var(--surface)}
+.caseTag{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:rgba(53,201,232,.14);
+  padding:12px 40px;border-bottom:1px solid rgba(53,201,232,.24)}
+.caseTag b{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+  letter-spacing:.16em;color:var(--accent)}
+.caseTag span{font-size:13px;color:#A9C7DC}
+.caseBody{display:grid;grid-template-columns:7fr 5fr;gap:40px;padding:56px 40px}
+.caseBody h2{font-size:clamp(26px,2.8vw,38px);line-height:1.12;margin-bottom:24px}
+.quote{font-size:17px;line-height:1.62;color:#DCE7F1;border-left:2px solid var(--accent);padding-left:22px}
+.metrics{display:flex;flex-direction:column;gap:1px;background:rgba(232,239,246,.12);
+  border:1px solid rgba(232,239,246,.12)}
+.metric{background:var(--surface);padding:28px 32px}
+.metric b{display:block;font-family:"IBM Plex Mono",monospace;font-size:34px;font-weight:500;
+  color:var(--accent);margin-bottom:8px}
+.metric span{font-size:14px;color:var(--muted)}
+
+/* Krav */
+.split{display:grid;grid-template-columns:5fr 7fr;gap:40px}
+.req{display:flex;gap:22px;padding-bottom:26px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.req:last-child{border:0;padding:0;margin:0}
+.req>b{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent);padding-top:4px}
+.req h3{font-size:19px;font-weight:600;margin-bottom:8px}
+.req p{font-size:16px;line-height:1.6;color:#A9BFD3}
+
+/* CTA + footer */
+.cta{display:flex;align-items:flex-end;justify-content:space-between;gap:60px;flex-wrap:wrap}
+.cta h2{font-size:clamp(34px,4vw,52px);line-height:1.06;margin-bottom:24px}
+.cta p{font-size:18px;line-height:1.62;color:var(--soft);max-width:720px}
+.cta .btn{padding:20px 38px;font-size:17px;white-space:nowrap}
+footer{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  padding:40px 0 56px;border-top:1px solid var(--line)}
+footer span{font-size:13px;color:var(--faint)}
+
+@media (max-width:1000px){
+  :root{--pad:22px}
+  .navlinks a{display:none}
+  .hero{grid-template-columns:1fr;gap:36px;padding:44px 0 48px;align-items:start}
+  .hero .btn{width:100%}
+  .heroCta{flex-direction:column;align-items:stretch;gap:14px}
+  .heroCta small{text-align:center}
+  .stats{grid-template-columns:1fr}
+  .stat{padding:26px 22px}
+  .stat b{font-size:34px}
+  section{padding:56px 0}
+  .two,.steps,.split,.caseBody{grid-template-columns:1fr;gap:24px}
+  .panel{padding:28px}
+  .caseTag{padding:12px 24px}
+  .caseBody{padding:32px 24px}
+  .cta{flex-direction:column;align-items:stretch}
+  .cta .btn{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div class="demo">
+  <b>DEMO</b>
+  <span>Plassholderinnhold — tall, referanser og sitater er ikke reelle og skal byttes ut før lansering.</span>
+</div>
+
+<div class="wrap">
+  <div class="nav">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 100 100" aria-label="Questa Scale">
+        <g fill="#E8EFF6"><rect width="100" height="11"/><rect y="89" width="100" height="11"/><rect width="11" height="100"/><rect x="89" width="11" height="31"/><rect x="89" y="69" width="11" height="31"/></g>
+        <text x="50" y="50" text-anchor="middle" dominant-baseline="central" fill="#E8EFF6" font-family="Archivo, Helvetica, sans-serif" font-size="40" font-weight="700" letter-spacing="-1">QS</text>
+      </svg>
+      <b>QUESTA SCALE</b>
+    </div>
+    <div class="navlinks">
+      <a href="#slik">Slik funker det</a>
+      <a href="#case">Resultater</a>
+      <a class="btn" href="[BOOKINGLENKE]">Book en gjennomgang</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div>
+      <span class="eyebrow">GOOGLE ADS FOR TANNKLINIKKER</span>
+      <h1>Pasienter som allerede har bestemt seg.</h1>
+      <p class="lead">Vi henter implantatpasienter fra Google-søk — mennesker som sitter og leter etter behandlingen i det øyeblikket de er klare. Ikke avbrutt oppmerksomhet i en feed, ikke rekkevidde, ikke likes.</p>
+      <div class="heroCta">
+        <a class="btn" href="[BOOKINGLENKE]">Book en gjennomgang</a>
+        <small>20 minutter. Vi sier nei hvis tallene ikke bærer.</small>
+      </div>
+    </div>
+    <div class="card">
+      <span class="eyebrow">ÉN KLINIKK PER BY</span>
+      <p>Vi tar bare én klinikk i hvert område. To kunder i samme by ville budt mot hverandre — og begge ville betalt mer for de samme pasientene.</p>
+      <div class="cityrow"><span>Oslo</span><span>[STATUS]</span></div>
+      <div class="cityrow"><span>Bergen</span><span>[STATUS]</span></div>
+      <div class="cityrow"><span>Trondheim</span><span>[STATUS]</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><b>[TALL]</b><span>Visningsandel i din by</span></div>
+  <div class="stat"><b>[TALL]</b><span>Kroner per kvalifisert henvendelse</span></div>
+  <div class="stat"><b>[TALL]</b><span>Konsultasjoner i måneden</span></div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 style="max-width:700px;margin-bottom:20px">Forskjellen mellom å bli funnet og å avbryte</h2>
+    <p style="font-size:18px;line-height:1.62;color:var(--soft);max-width:640px;margin-bottom:56px">Et tannimplantat er ikke et impulskjøp. Det er en beslutning folk bruker uker på — og som regel starter den med et søk.</p>
+    <div class="two">
+      <div class="panel on">
+        <span class="eyebrow" style="font-size:11px;letter-spacing:.16em;display:block;margin-bottom:20px">GOOGLE-SØK</span>
+        <h3>Pasienten leter etter deg</h3>
+        <div class="stack">
+          <p>Hun har mistet en tann og søker «tannimplantat pris». Behovet finnes allerede — vi står bare der når hun leter.</p>
+          <p>Volumet er jevnt fra måned til måned. Ingen ny kampanjeidé hver fjortende dag.</p>
+          <p>Vi kan måle hvert eneste søkeord ned til hvilke som faktisk ender i behandling.</p>
+        </div>
+      </div>
+      <div class="panel off">
+        <span class="eyebrow" style="font-size:11px;letter-spacing:.16em;display:block;margin-bottom:20px">SOSIALE MEDIER</span>
+        <h3>Du avbryter pasienten</h3>
+        <div class="stack">
+          <p>Annonsen treffer folk som ikke tenkte på tenner da de åpnet appen. De fleste av dem trenger ikke implantat.</p>
+          <p>Kreativiteten slites ut. Det som funket i mars er dødt i mai, og da starter jobben på nytt.</p>
+          <p>Billige henvendelser som sjelden møter opp til konsultasjon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="slik">
+  <div class="wrap">
+    <h2>Slik funker det</h2>
+    <div class="steps">
+      <div class="step">
+        <b>01</b>
+        <h3>Vi sjekker auksjonen i byen din</h3>
+        <p>Før vi tar deg inn som kunde måler vi søkevolum og klikkpris der du holder til. Bærer ikke regnestykket, sier vi det med en gang — det koster deg ingenting å få vite det.</p>
+      </div>
+      <div class="step">
+        <b>02</b>
+        <h3>Vi bygger kampanjen og siden</h3>
+        <p>Egen landingsside per behandling, ett søkeord per annonsegruppe, og sporing som følger henvendelsen helt fram til oppmøtt konsultasjon.</p>
+      </div>
+      <div class="step">
+        <b>03</b>
+        <h3>Du får pasienter, vi rapporterer ærlig</h3>
+        <p>Hver måned ser du hva hver krone ga: henvendelser, bookede konsultasjoner, oppmøte og akseptert behandling. Ikke visninger og klikk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="case">
+  <div class="wrap">
+    <div class="case">
+      <div class="caseTag"><b>DEMO</b><span>Plassholder — ekte case og tall settes inn før lansering.</span></div>
+      <div class="caseBody">
+        <div>
+          <span class="mono" style="font-size:11px;letter-spacing:.16em;color:var(--faint);display:block;margin-bottom:22px">[KLINIKKENS NAVN] — [BY]</span>
+          <h2>[Én setning om hva klinikken oppnådde]</h2>
+          <p style="font-size:17px;line-height:1.62;color:var(--soft);margin-bottom:30px">[To–tre setninger om utgangspunktet: hva de gjorde før, hva som ikke funket, og hva som endret seg. Skriv det i klinikkeierens språk, ikke i markedsføringsspråk.]</p>
+          <p class="quote">«[Sitat fra klinikkeier. Hentes inn og godkjennes skriftlig før det brukes.]»</p>
+          <p style="font-size:14px;color:var(--faint);margin-top:16px;padding-left:24px">[Navn], [rolle]</p>
+        </div>
+        <div class="metrics">
+          <div class="metric"><b>[TALL]</b><span>Henvendelser i måneden</span></div>
+          <div class="metric"><b>[TALL]</b><span>Kroner per henvendelse</span></div>
+          <div class="metric"><b>[TALL]</b><span>Andel som møter til konsultasjon</span></div>
+          <div class="metric"><b>[TALL]</b><span>Måneder som kunde</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap split">
+    <div>
+      <h2 style="margin-bottom:22px">Dette passer ikke for alle</h2>
+      <p style="font-size:17px;line-height:1.62;color:#A9BFD3">Vi tar inn få klinikker, og vi vil at de skal bli lenge. Derfor er vi ærlige om hva som kreves fra din side før vi begynner.</p>
+    </div>
+    <div>
+      <div class="req"><b>01</b><div><h3>Noen ringer tilbake samme dag</h3><p>En pasient som fyller ut skjemaet kontakter gjerne to–tre klinikker. Ringer dere først i morgen, er saken tapt før den begynte.</p></div></div>
+      <div class="req"><b>02</b><div><h3>Dere har kapasitet til flere pasienter</h3><p>Er implantatkalenderen full tre måneder fram, hjelper det ingen av oss å fylle den mer.</p></div></div>
+      <div class="req"><b>03</b><div><h3>Dere forteller oss hva som ble til behandling</h3><p>Uten den tilbakemeldingen optimaliserer vi mot skjemaer i stedet for pasienter — og da blir resultatene gradvis dårligere for begge.</p></div></div>
+      <div class="req"><b>04</b><div><h3>Budsjettet tåler et par måneders innkjøring</h3><p>En ny konto trenger data før den finner formen. Vi kan ikke love resultater fra uke én, og vi later ikke som.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap cta">
+    <div>
+      <h2>Er byen din fortsatt ledig?</h2>
+      <p>Vi går gjennom søkevolum og klikkpris i ditt område og sier rett ut om det er penger å hente. Tar 20 minutter, og du sitter igjen med tallene uansett hva du bestemmer deg for.</p>
+    </div>
+    <a class="btn" href="[BOOKINGLENKE]">Book en gjennomgang</a>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <div class="brand">
+      <svg width="26" height="26" viewBox="0 0 100 100">
+        <g fill="#6F8CA8"><rect width="100" height="11"/><rect y="89" width="100" height="11"/><rect width="11" height="100"/><rect x="89" width="11" height="31"/><rect x="89" y="69" width="11" height="31"/></g>
+        <text x="50" y="50" text-anchor="middle" dominant-baseline="central" fill="#6F8CA8" font-family="Archivo, Helvetica, sans-serif" font-size="40" font-weight="700" letter-spacing="-1">QS</text>
+      </svg>
+      <span>Questa Scale AS · [ORG.NR]</span>
+    </div>
+    <span>[E-POST] · [TELEFON]</span>
+  </footer>
+</div>
+
+</body>
+</html>
