@@ -58,8 +58,8 @@ section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
 .brand{display:flex;align-items:center;gap:14px}
 .brand b{font-family:"Archivo",sans-serif;font-size:15px;font-weight:600;letter-spacing:.16em}
 .navlinks{display:flex;align-items:center;gap:32px}
-.navlinks a{font-size:14px;color:var(--muted)}
-.navlinks a:hover{color:var(--ink)}
+.navlinks a:not(.btn){font-size:14px;color:var(--muted)}
+.navlinks a:not(.btn):hover{color:var(--ink)}
 .nav .btn{padding:12px 22px;font-size:14px;min-height:44px}
 
 .hero{display:grid;grid-template-columns:7fr 5fr;gap:48px;padding:96px 0 88px;align-items:end}
