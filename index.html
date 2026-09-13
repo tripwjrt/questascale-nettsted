@@ -35,11 +35,6 @@ a:hover{color:#7FDFF0}
   border:0;cursor:pointer;transition:background .15s}
 .btn:hover{background:#7FDFF0;color:var(--navy)}
 
-/* DEMO */
-.demo{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
-  background:var(--accent);color:var(--navy);padding:11px 24px;text-align:center}
-.demo b{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;letter-spacing:.14em}
-.demo span{font-size:13px;font-weight:500}
 
 /* Nav */
 .nav{display:flex;align-items:center;justify-content:space-between;gap:24px;
@@ -97,11 +92,6 @@ section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
 
 /* Case */
 .case{border:1px solid rgba(53,201,232,.30);background:var(--surface)}
-.caseTag{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:rgba(53,201,232,.14);
-  padding:12px 40px;border-bottom:1px solid rgba(53,201,232,.24)}
-.caseTag b{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
-  letter-spacing:.16em;color:var(--accent)}
-.caseTag span{font-size:13px;color:#A9C7DC}
 .caseBody{display:grid;grid-template-columns:7fr 5fr;gap:40px;padding:56px 40px}
 .caseBody h2{font-size:clamp(26px,2.8vw,38px);line-height:1.12;margin-bottom:24px}
 .quote{font-size:17px;line-height:1.62;color:#DCE7F1;border-left:2px solid var(--accent);padding-left:22px}
@@ -142,7 +132,6 @@ footer span{font-size:13px;color:var(--faint)}
   section{padding:56px 0}
   .two,.steps,.split,.caseBody{grid-template-columns:1fr;gap:24px}
   .panel{padding:28px}
-  .caseTag{padding:12px 24px}
   .caseBody{padding:32px 24px}
   .cta{flex-direction:column;align-items:stretch}
   .cta .btn{width:100%}
@@ -151,10 +140,6 @@ footer span{font-size:13px;color:var(--faint)}
 </head>
 <body>
 
-<div class="demo">
-  <b>DEMO</b>
-  <span>Plassholderinnhold — tall, referanser og sitater er ikke reelle og skal byttes ut før lansering.</span>
-</div>
 
 <div class="wrap">
   <div class="nav">
@@ -250,7 +235,6 @@ footer span{font-size:13px;color:var(--faint)}
 <section id="case">
   <div class="wrap">
     <div class="case">
-      <div class="caseTag"><b>DEMO</b><span>Plassholder — ekte case og tall settes inn før lansering.</span></div>
       <div class="caseBody">
         <div>
           <span class="mono" style="font-size:11px;letter-spacing:.16em;color:var(--faint);display:block;margin-bottom:22px">[KLINIKKENS NAVN] — [BY]</span>
