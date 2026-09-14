@@ -57,16 +57,33 @@ section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
   padding-top:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:14px}
 .brand b{font-family:"Archivo",sans-serif;font-size:15px;font-weight:600;letter-spacing:.16em}
-.navlinks{display:flex;align-items:center;gap:32px}
-.navlinks a:not(.btn){font-size:14px;color:var(--muted)}
-.navlinks a:not(.btn):hover{color:var(--ink)}
 .nav .btn{padding:12px 22px;font-size:14px;min-height:44px}
 
-.hero{padding:112px 0 104px;border-bottom:1px solid var(--line)}
-.hero h1{font-size:clamp(38px,5vw,66px);line-height:1.04;font-weight:700;margin:26px 0 28px;max-width:940px}
-.hero p.lead{font-size:19px;line-height:1.62;color:var(--soft);max-width:620px;margin-bottom:40px}
+.hero{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:center;
+  padding:92px 0 88px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(38px,4.2vw,56px);line-height:1.06;font-weight:700;margin:24px 0 26px}
+.hero p.lead{font-size:19px;line-height:1.62;color:var(--soft);max-width:520px;margin-bottom:38px}
 .heroCta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
 .heroCta small{font-size:15px;color:var(--muted)}
+
+.serpwrap{position:relative}
+.serp{background:#FFFFFF;box-shadow:0 24px 60px rgba(0,0,0,.35);overflow:hidden}
+.serpbar{padding:16px 20px;border-bottom:1px solid #E3E8EE}
+.searchbox{display:flex;align-items:center;gap:10px;border:1px solid #DADCE0;border-radius:24px;padding:9px 16px}
+.searchbox span{font-size:14px;color:#202124}
+.serpbody{padding:20px 22px 24px}
+.result{padding:14px 0}
+.result + .result{border-top:1px solid #EEF1F4}
+.adtag{display:inline-block;font-size:11px;font-weight:700;color:#202124;border:1px solid #202124;
+  border-radius:3px;padding:1px 5px;margin-right:8px}
+.rurl{font-size:12px;color:#5F6368;margin-bottom:3px}
+.rtitle{font-size:17px;color:#1A0DAB;margin-bottom:3px;font-weight:500}
+.rsnip{font-size:13px;color:#4D5156;line-height:1.5}
+.dim .rtitle{color:#7B8794}.dim .rurl{color:#9AA5B1}.dim .rsnip{color:#9AA5B1}
+.yours{position:relative}
+.yours::before{content:"";position:absolute;left:-22px;top:8px;bottom:8px;width:3px;background:var(--accent)}
+.badge{position:absolute;right:-10px;top:-14px;background:var(--accent);color:var(--navy);
+  font-family:"IBM Plex Mono",monospace;font-size:10px;font-weight:600;letter-spacing:.14em;padding:6px 12px}
 
 .two{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .panel{padding:40px}
@@ -117,8 +134,10 @@ footer span{font-size:13px;color:var(--faint)}
 
 @media (max-width:1000px){
   :root{--pad:22px}
-  .navlinks a:not(.btn){display:none}
-  .hero{padding:48px 0 56px}
+  .hero{grid-template-columns:1fr;gap:40px;padding:48px 0 56px}
+  .badge{right:0;top:-12px}
+  .yours::before{left:-12px}
+  .serpbody{padding:16px 18px 20px}
   .hero .btn{width:100%}
   .heroCta{flex-direction:column;align-items:stretch;gap:14px}
   .heroCta small{text-align:center}
@@ -142,12 +161,7 @@ footer span{font-size:13px;color:var(--faint)}
       </svg>
       <b>VIRNES</b>
     </div>
-    <div class="navlinks">
-      <a href="#veien">Veien dit</a>
-      <a href="#case">Resultater</a>
-      <a href="#tilbud">Tilbudet</a>
-      <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
-    </div>
+    <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
   </div>
 
   <div class="hero">
@@ -157,7 +171,36 @@ footer span{font-size:13px;color:var(--faint)}
       <p class="lead">Hver måned, ikke når det tilfeldigvis dukker opp noen. Du tar imot dem. Resten er vår jobb.</p>
       <div class="heroCta">
         <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
-        <small>20 minutter. Du får tallene for din by uansett.</small>
+        <small>20 minutter.</small>
+      </div>
+    </div>
+
+    <div class="serpwrap">
+      <div class="badge">DIN KLINIKK</div>
+      <div class="serp">
+        <div class="serpbar">
+          <div class="searchbox">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#9AA0A6" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20 L16 16"/></svg>
+            <span>tannimplantat pris</span>
+          </div>
+        </div>
+        <div class="serpbody">
+          <div class="result yours">
+            <div class="rurl"><span class="adtag">Annonse</span>dinklinikk.no/tannimplantat</div>
+            <div class="rtitle">Tannimplantat — gratis vurdering</div>
+            <div class="rsnip">Erfarne implantatkirurger. Fast pris og finansiering. Ledig time denne uken.</div>
+          </div>
+          <div class="result dim">
+            <div class="rurl">konkurrent.no</div>
+            <div class="rtitle">Tannlege i sentrum</div>
+            <div class="rsnip">Vi tilbyr alt innen tannhelse for hele familien.</div>
+          </div>
+          <div class="result dim">
+            <div class="rurl">forum.no › tenner</div>
+            <div class="rtitle">Hva kostet implantatet ditt?</div>
+            <div class="rsnip">Noen som har erfaring med priser? Fikk tilbud på …</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -299,6 +342,7 @@ footer span{font-size:13px;color:var(--faint)}
       <span>Questa Scale AS · [ORG.NR]</span>
     </div>
     <span>[E-POST] · [TELEFON]</span>
+    <span><a href="/personvern.html">Personvern</a> · <a href="/vilkar.html">Vilkår</a></span>
   </div>
 </footer>
 
