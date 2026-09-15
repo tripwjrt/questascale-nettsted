@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<script>document.documentElement.className+=" js"</script>
 <style>
 :root{
   --navy:#04203E; --deep:#02182F; --surface:#052B4F;
@@ -58,6 +59,20 @@ section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
 .brand{display:flex;align-items:center;gap:14px}
 .brand b{font-family:"Archivo",sans-serif;font-size:15px;font-weight:600;letter-spacing:.16em}
 .nav .btn{padding:12px 22px;font-size:14px;min-height:44px}
+
+/* Innglidning ved scroll — bare når JS er på, og aldri ved redusert bevegelse */
+.js .reveal{opacity:0;transform:translateY(20px);
+  transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+.js .stagger>.reveal:nth-child(2){transition-delay:90ms}
+.js .stagger>.reveal:nth-child(3){transition-delay:180ms}
+.js .stagger>.reveal:nth-child(4){transition-delay:270ms}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+
+.sechead{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+.art{flex:0 0 auto}
 
 .hero{display:grid;grid-template-columns:6fr 5fr;gap:64px;align-items:center;
   padding:92px 0 88px;border-bottom:1px solid var(--line)}
@@ -148,6 +163,9 @@ footer span{font-size:13px;color:var(--faint)}
   .cta{flex-direction:column;align-items:stretch;margin-top:48px;padding-top:40px}
   .cta .btn{width:100%}
   section .btn{width:100%}
+  .sechead{grid-template-columns:1fr;gap:0}
+  .art{display:none}
+  .js .reveal{transform:translateY(14px)}
 }
 </style>
 </head>
@@ -164,8 +182,8 @@ footer span{font-size:13px;color:var(--faint)}
     <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
   </div>
 
-  <div class="hero">
-    <div>
+  <div class="hero stagger">
+    <div class="reveal">
       <span class="eyebrow">TANNIMPLANTATER</span>
       <h1>En stødig strøm av implantatpasienter.</h1>
       <p class="lead">Hver måned, ikke når det tilfeldigvis dukker opp noen. Du tar imot dem. Resten er vår jobb.</p>
@@ -175,7 +193,7 @@ footer span{font-size:13px;color:var(--faint)}
       </div>
     </div>
 
-    <div class="serpwrap">
+    <div class="serpwrap reveal">
       <div class="badge">DIN KLINIKK</div>
       <div class="serp">
         <div class="serpbar">
@@ -208,9 +226,9 @@ footer span{font-size:13px;color:var(--faint)}
 
 <section class="light">
   <div class="wrap">
-    <h2 style="max-width:620px;margin-bottom:56px">Fra tilfeldig til forutsigbart</h2>
-    <div class="two">
-      <div class="panel off">
+    <h2 class="reveal" style="max-width:620px;margin-bottom:56px">Fra tilfeldig til forutsigbart</h2>
+    <div class="two stagger">
+      <div class="panel off reveal">
         <span class="eyebrow" style="font-size:11px;letter-spacing:.16em;display:block;margin-bottom:20px">I DAG</span>
         <h3>Implantat skjer når det skjer</h3>
         <div class="stack">
@@ -218,7 +236,7 @@ footer span{font-size:13px;color:var(--faint)}
           <p>Stolen som tjener mest, står tom mest.</p>
         </div>
       </div>
-      <div class="panel on">
+      <div class="panel on reveal">
         <span class="eyebrow" style="font-size:11px;letter-spacing:.16em;display:block;margin-bottom:20px">MED OSS</span>
         <h3>Noe som kommer inn hver måned</h3>
         <div class="stack">
@@ -232,19 +250,32 @@ footer span{font-size:13px;color:var(--faint)}
 
 <section class="dark" id="veien">
   <div class="wrap">
-    <h2 style="max-width:680px">Veien dit</h2>
-    <div class="steps">
-      <div class="step">
+    <div class="sechead">
+      <h2 class="reveal" style="max-width:680px">Veien dit</h2>
+      <svg class="art reveal" width="260" height="200" viewBox="0 0 260 200" aria-hidden="true">
+        <g fill="#164C72"><path d="M62 114 L92 129 L62 144 L32 129 Z"/></g>
+        <path d="M32 129 L62 144 L62 178 L32 163 Z" fill="#0B3355"/>
+        <path d="M92 129 L62 144 L62 178 L92 163 Z" fill="#072742"/>
+        <path d="M130 84 L160 99 L130 114 L100 99 Z" fill="#1B6087"/>
+        <path d="M100 99 L130 114 L130 148 L100 133 Z" fill="#0D3F65"/>
+        <path d="M160 99 L130 114 L130 148 L160 133 Z" fill="#082E4D"/>
+        <path d="M198 54 L228 69 L198 84 L168 69 Z" fill="#35C9E8"/>
+        <path d="M168 69 L198 84 L198 118 L168 103 Z" fill="#1B8FAA"/>
+        <path d="M228 69 L198 84 L198 118 L228 103 Z" fill="#0E6F88"/>
+      </svg>
+    </div>
+    <div class="steps stagger">
+      <div class="step reveal">
         <b>01</b>
         <h3>Et kort møte</h3>
         <p>20 minutter. Vi ser på hvor mange i din by som leter etter implantat, og om det bærer.</p>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <b>02</b>
         <h3>Vi setter opp alt</h3>
         <p>Du gjør ingenting. Vi gir beskjed når det er klart, som regel innen en uke.</p>
       </div>
-      <div class="step">
+      <div class="step reveal">
         <b>03</b>
         <h3>Pasientene tar kontakt</h3>
         <p>De ringer eller fyller ut skjema. Din eneste jobb er å svare.</p>
@@ -259,7 +290,7 @@ footer span{font-size:13px;color:var(--faint)}
 
 <section class="light" id="case">
   <div class="wrap">
-    <div class="case">
+    <div class="case reveal">
       <div class="caseBody">
         <div>
           <span class="mono" style="font-size:11px;letter-spacing:.16em;color:#8AA3B8;display:block;margin-bottom:22px">[KLINIKKENS NAVN] — [BY]</span>
@@ -280,36 +311,59 @@ footer span{font-size:13px;color:var(--faint)}
 
 <section>
   <div class="wrap split">
-    <div>
+    <div class="reveal">
       <h2 style="margin-bottom:22px">Vi sier nei til de fleste</h2>
       <p style="font-size:17px;line-height:1.62;color:#A9BFD3">Tre situasjoner der du ikke bør bruke penger på oss. Vi sier fra før du gjør det.</p>
+      <svg class="art" width="240" height="200" viewBox="0 0 240 200" style="margin-top:44px" aria-hidden="true">
+        <path d="M120 50 L220 100 L120 150 L20 100 Z" fill="none" stroke="#143F63" stroke-width="1.5"/>
+        <path d="M120 64 L192 100 L120 136 L48 100 Z" fill="none" stroke="#1A5477" stroke-width="1.5"/>
+        <path d="M120 78 L164 100 L120 122 L76 100 Z" fill="none" stroke="#22708F" stroke-width="1.5"/>
+        <path d="M120 65 L146 79 L120 93 L94 79 Z" fill="#35C9E8"/>
+        <path d="M94 79 L120 93 L120 121 L94 107 Z" fill="#1B8FAA"/>
+        <path d="M146 79 L120 93 L120 121 L146 107 Z" fill="#0E6F88"/>
+      </svg>
     </div>
-    <div>
-      <div class="req"><b>01</b><div><h3>Ingen ringer tilbake samme dag</h3><p>Pasienten kontakter flere klinikker. Den som svarer først, får henne.</p></div></div>
-      <div class="req"><b>02</b><div><h3>Kalenderen er allerede full</h3><p>Er implantattimene fulle tre måneder fram, trenger du ikke oss.</p></div></div>
-      <div class="req"><b>03</b><div><h3>Byen er for liten</h3><p>Noen steder søker det for få etter implantat til at det bærer.</p></div></div>
+    <div class="stagger">
+      <div class="req reveal"><b>01</b><div><h3>Ingen ringer tilbake samme dag</h3><p>Pasienten kontakter flere klinikker. Den som svarer først, får henne.</p></div></div>
+      <div class="req reveal"><b>02</b><div><h3>Kalenderen er allerede full</h3><p>Er implantattimene fulle tre måneder fram, trenger du ikke oss.</p></div></div>
+      <div class="req reveal"><b>03</b><div><h3>Byen er for liten</h3><p>Noen steder søker det for få etter implantat til at det bærer.</p></div></div>
     </div>
   </div>
 </section>
 
 <section class="light" id="tilbud">
   <div class="wrap">
-    <h2 style="max-width:660px;margin-bottom:20px">Første måned betaler du oss ingenting</h2>
-    <p style="font-size:18px;line-height:1.62;max-width:620px">Kommer det ingen pasienter, sender vi ingen faktura. Så enkelt er det.</p>
-    <div class="faq">
-      <div class="qa">
+    <div class="sechead">
+      <div class="reveal">
+        <h2 style="max-width:660px;margin-bottom:20px">Første måned betaler du oss ingenting</h2>
+        <p style="font-size:18px;line-height:1.62;max-width:620px">Kommer det ingen pasienter, sender vi ingen faktura. Så enkelt er det.</p>
+      </div>
+      <svg class="art reveal" width="260" height="160" viewBox="0 0 260 160" aria-hidden="true">
+        <path d="M62 58 L92 73 L62 88 L32 73 Z" fill="none" stroke="#35C9E8" stroke-width="1.6"/>
+        <path d="M32 73 L62 88 L62 122 L32 107 Z" fill="none" stroke="#35C9E8" stroke-width="1.6"/>
+        <path d="M92 73 L62 88 L62 122 L92 107 Z" fill="none" stroke="#35C9E8" stroke-width="1.6"/>
+        <path d="M130 58 L160 73 L130 88 L100 73 Z" fill="#CBDFED"/>
+        <path d="M100 73 L130 88 L130 122 L100 107 Z" fill="#A6C3D9"/>
+        <path d="M160 73 L130 88 L130 122 L160 107 Z" fill="#87A8C1"/>
+        <path d="M198 58 L228 73 L198 88 L168 73 Z" fill="#CBDFED"/>
+        <path d="M168 73 L198 88 L198 122 L168 107 Z" fill="#A6C3D9"/>
+        <path d="M228 73 L198 88 L198 122 L228 107 Z" fill="#87A8C1"/>
+      </svg>
+    </div>
+    <div class="faq stagger">
+      <div class="qa reveal">
         <h3>Ingen oppstartskostnad</h3>
         <p>Ingen etableringsgebyr og ingen bindingstid. Du kan si opp når du vil.</p>
       </div>
-      <div class="qa">
+      <div class="qa reveal">
         <h3>Du eier alt vi bygger</h3>
         <p>Annonsekontoen står i klinikkens navn fra dag én. Slutter vi, beholder du kontoen og alle tallene.</p>
       </div>
-      <div class="qa">
+      <div class="qa reveal">
         <h3>Annonsebudsjettet er ditt</h3>
         <p>Du bestemmer det selv og betaler direkte til Google. Vi tar ingen prosent av forbruket.</p>
       </div>
-      <div class="qa">
+      <div class="qa reveal">
         <h3>Vi tar få klinikker</h3>
         <p>Én klinikk per by. Er du kunde hos oss, tar vi ikke inn konkurrenten din i samme område.</p>
       </div>
@@ -323,7 +377,7 @@ footer span{font-size:13px;color:var(--faint)}
 
 <section>
   <div class="wrap">
-    <div class="cta" style="margin-top:0;padding-top:0;border:0">
+    <div class="cta reveal" style="margin-top:0;padding-top:0;border:0">
       <div>
         <h2>Er byen din ledig?</h2>
         <p>20 minutter. Du får vite hvor mange som leter etter implantat der du holder til, og hva det er verdt for klinikken. Tallene er dine uansett.</p>
@@ -339,12 +393,29 @@ footer span{font-size:13px;color:var(--faint)}
       <svg width="26" height="26" viewBox="0 0 100 100">
         <path d="M6 22 L50 16 L94 22 L50 28 Z" fill="#6F8CA8"/><path d="M20 36 L50 88 L80 36 L66 36 L50 64 L34 36 Z" fill="#6F8CA8"/>
       </svg>
-      <span>Questa Scale AS · [ORG.NR]</span>
+      <span>Questa Scale AS · org.nr. 930 208 469</span>
     </div>
-    <span>[E-POST] · [TELEFON]</span>
+    <span>thomas@questascale.com</span>
     <span><a href="/personvern.html">Personvern</a> · <a href="/vilkar.html">Vilkår</a></span>
   </div>
 </footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    for (var i=0;i<els.length;i++) els[i].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
 
 </body>
 </html>
