@@ -402,18 +402,24 @@ footer span{font-size:13px;color:var(--faint)}
 
 <script>
 (function(){
-  var els = document.querySelectorAll('.reveal');
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  function showAll(){ for (var i=0;i<els.length;i++) els[i].classList.add('in'); }
   if (!('IntersectionObserver' in window) ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    for (var i=0;i<els.length;i++) els[i].classList.add('in');
-    return;
-  }
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) { showAll(); return; }
+  try {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+    var vh = window.innerHeight || 800;
+    els.forEach(function(el){
+      if (el.getBoundingClientRect().top < vh) el.classList.add('in');
+      else io.observe(el);
     });
-  }, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
-  els.forEach(function(el){ io.observe(el); });
+  } catch (err) { showAll(); return; }
+  // Sikkerhetsnett: om observeren aldri fyrer, vis alt heller enn å la siden stå tom
+  setTimeout(function(){ if (!document.querySelector('.reveal.in')) showAll(); }, 1200);
 })();
 </script>
 
