@@ -74,29 +74,12 @@ section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
 .sechead{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
 .art{flex:0 0 auto}
 
-.hero{display:grid;grid-template-columns:6fr 5fr;gap:56px;align-items:center;
-  padding:88px 0 84px;border-bottom:1px solid var(--line)}
-.hero h1{font-size:clamp(38px,4.3vw,57px);line-height:1.05;font-weight:700;margin:24px 0 26px}
-.hero p.lead{font-size:19px;line-height:1.62;color:var(--soft);max-width:520px;margin:0 0 38px}
-.heroCta{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.hero{padding:112px 0 100px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(40px,5vw,68px);line-height:1.03;font-weight:700;
+  margin:28px 0 32px;max-width:17ch}
+.hero p.lead{font-size:21px;line-height:1.58;color:var(--soft);max-width:560px;margin:0 0 44px}
+.heroCta{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
 .heroCta small{font-size:15px;color:var(--muted)}
-.heroProof{background:var(--surface);border:1px solid rgba(53,201,232,.22);
-  padding:34px 32px 30px;box-shadow:0 26px 64px rgba(1,10,24,.5)}
-.heroProof .ph{display:flex;flex-direction:column;gap:7px;
-  padding-bottom:22px;border-bottom:1px solid rgba(232,239,246,.13)}
-.heroProof .ph i{font-family:"IBM Plex Mono",monospace;font-style:normal;font-size:11px;
-  font-weight:600;letter-spacing:.18em;color:var(--accent)}
-.heroProof .ph em{font-style:normal;font-size:14px;color:var(--muted)}
-.prow{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
-  padding:13px 0;border-bottom:1px solid rgba(232,239,246,.07)}
-.prow span{font-size:15px;color:var(--soft)}
-.prow b{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
-  font-size:17px;font-weight:500;color:var(--ink)}
-.pbig{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
-.pbig span{display:block;font-size:13px;color:var(--muted);margin-bottom:9px;line-height:1.35}
-.pbig b{display:block;font-family:"Archivo",sans-serif;font-size:37px;line-height:1;
-  font-weight:700;letter-spacing:-.02em;color:var(--accent)}
-.pnote{margin-top:26px;font-size:12.5px;line-height:1.5;color:var(--faint)}
 
 .two{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 .panel{padding:40px}
@@ -147,9 +130,7 @@ footer span{font-size:13px;color:var(--faint)}
 
 @media (max-width:1000px){
   :root{--pad:22px}
-  .hero{grid-template-columns:1fr;gap:36px;padding:48px 0 56px}
-  .heroProof{padding:26px 22px 24px}
-  .pbig b{font-size:31px}
+  .hero{padding:56px 0 60px}
   .hero .btn{width:100%}
   .heroCta{flex-direction:column;align-items:stretch;gap:14px}
   .heroCta small{text-align:center}
@@ -188,21 +169,6 @@ footer span{font-size:13px;color:var(--faint)}
         <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
         <small>20 minutter. Du får tallene for din by uansett.</small>
       </div>
-    </div>
-
-    <div class="heroProof reveal">
-      <div class="ph">
-        <i>DOKUMENTERT &middot; &Eacute;N KAMPANJE</i>
-        <em>Tannklinikk p&aring; &Oslash;stlandet &mdash; &eacute;n m&aring;ned</em>
-      </div>
-      <div class="prow"><span>Annonsebudsjett</span><b>10 000 kr</b></div>
-      <div class="prow"><span>Henvendelser</span><b>81</b></div>
-      <div class="prow"><span>Bookede timer</span><b>63</b></div>
-      <div class="pbig">
-        <div><span>Nye implantatpasienter</span><b>15+</b></div>
-        <div><span>Kostnad per pasient</span><b>667 kr</b></div>
-      </div>
-      <p class="pnote">Faktiske tall fra &eacute;n klinikk. Resultatet varierer med by, konkurranse og kapasitet &mdash; vi lover ingen de samme tallene.</p>
     </div>
   </div>
 </div>
@@ -276,16 +242,17 @@ footer span{font-size:13px;color:var(--faint)}
     <div class="case reveal">
       <div class="caseBody">
         <div>
-          <span class="mono" style="font-size:11px;letter-spacing:.16em;color:#8AA3B8;display:block;margin-bottom:22px">[KLINIKKENS NAVN] — [BY]</span>
-          <h2>[Én setning om hva klinikken sitter igjen med]</h2>
-          <p style="font-size:17px;line-height:1.62;margin-bottom:30px">[To setninger om hvordan det var før, og hvordan det er nå.]</p>
-          <p class="quote">«[Sitat fra klinikkeier — hentes inn senere]»</p>
+          <span class="mono" style="font-size:11px;letter-spacing:.16em;color:#8AA3B8;display:block;margin-bottom:22px">TANNKLINIKK P&Aring; &Oslash;STLANDET &mdash; &Eacute;N M&Aring;NED</span>
+          <h2>Femten nye implantatpasienter p&aring; &eacute;n m&aring;ned.</h2>
+          <p style="font-size:17px;line-height:1.62;margin-bottom:30px">F&oslash;r fikk klinikken implantatpasienter n&aring;r det tilfeldigvis dukket opp noen. Med rundt 10 000 kr i annonsebudsjett fylte vi kalenderen med over seksti bookede timer &mdash; og minst femten av dem ble implantatbehandling.</p>
+          <p class="quote">&laquo;[Sitat fra klinikkeier &mdash; hentes inn]&raquo;</p>
           <p style="font-size:14px;color:#8AA3B8;margin-top:16px;padding-left:24px">[Navn], [rolle]</p>
+          <p style="font-size:12.5px;line-height:1.5;color:#8AA3B8;margin-top:30px">Faktiske tall fra &eacute;n klinikk, avrundet. Resultatet varierer med by, konkurranse og kapasitet &mdash; vi lover ingen de samme tallene.</p>
         </div>
         <div class="metrics">
-          <div class="metric"><b>[TALL]</b><span>Implantatpasienter i måneden</span></div>
-          <div class="metric"><b>[TALL]</b><span>Kroner i behandlingsverdi per måned</span></div>
-          <div class="metric"><b>[TALL]</b><span>Måneder som kunde</span></div>
+          <div class="metric"><b>15+</b><span>Nye implantatpasienter p&aring; &eacute;n m&aring;ned</span></div>
+          <div class="metric"><b>8 av 10</b><span>Henvendelser som ble til en booket time</span></div>
+          <div class="metric"><b>&lt; 700 kr</b><span>Annonsekost per ny implantatpasient</span></div>
         </div>
       </div>
     </div>
