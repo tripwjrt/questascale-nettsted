@@ -4,151 +4,155 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Virnes — flere implantatpasienter til tannklinikken</title>
-<meta name="description" content="En stødig strøm av implantatpasienter, hver måned. Én klinikk per by.">
+<meta name="description" content="Nye implantatpasienter hver måned. Vi henter dem inn. Du behandler dem.">
 <meta name="robots" content="noindex, nofollow">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://virnes.com/">
 <meta property="og:site_name" content="Virnes">
 <meta property="og:locale" content="nb_NO">
 <meta property="og:title" content="Virnes — flere implantatpasienter til tannklinikken">
-<meta property="og:description" content="En stødig strøm av implantatpasienter, hver måned. Én klinikk per by.">
+<meta property="og:description" content="Nye implantatpasienter hver måned. Vi henter dem inn. Du behandler dem.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2304203E'/%3E%3Cg transform='translate(16 16) scale(0.68)' fill='%23fff'%3E%3Cpath d='M10 22 L50 17 L90 22 L50 27 Z'/%3E%3Cpath d='M23 36 L50 84 L77 36 L64 36 L50 61 L36 36 Z'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230C2942'/%3E%3Cg transform='translate(16 16) scale(0.68)' fill='%23fff'%3E%3Cpath d='M10 22 L50 17 L90 22 L50 27 Z'/%3E%3Cpath d='M23 36 L50 84 L77 36 L64 36 L50 61 L36 36 Z'/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
 <script>document.documentElement.className+=" js"</script>
 <style>
 :root{
-  --navy:#04203E; --deep:#02182F; --surface:#052B4F;
-  --accent:#35C9E8; --accent-d:#0B6E88;
-  --ink:#E8EFF6; --muted:#94AEC6; --soft:#B4C8DA; --faint:#6F8CA8;
-  --paper:#F2F6FA; --card:#FFFFFF; --rule:#DCE5EE;
-  --ink-d:#0B2239; --muted-d:#4E6C88;
-  --line:rgba(232,239,246,.10); --pad:80px;
+  --paper:#FFFFFF; --mist:#F5F8FA; --navy:#0C2942;
+  --ink:#0E2740; --body:#42596F; --muted:#6D8299; --faint:#94A7B8;
+  --rule:#E3EAF1;
+  --accent:#0B6479; --accentBright:#8FD4E4;
+  --lineD:rgba(232,239,246,.14);
+  --pad:80px;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
-body{margin:0;background:var(--navy);color:var(--ink);
+body{margin:0;background:var(--paper);color:var(--ink);
   font-family:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
   -webkit-font-smoothing:antialiased;line-height:1.5}
-h1,h2,h3{font-family:"Archivo","Helvetica Neue",Helvetica,sans-serif;margin:0;
-  letter-spacing:-.02em;text-wrap:balance}
-p{margin:0;text-wrap:pretty}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;margin:0;
+  font-weight:600;letter-spacing:-.011em;text-wrap:balance}
+p{margin:0;text-wrap:pretty;color:var(--body)}
 a{color:var(--accent);text-decoration:none}
-a:hover{color:#7FDFF0}
-.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
-.wrap{max-width:1440px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
-.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:600;
-  letter-spacing:.18em;color:var(--accent)}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);
-  color:var(--navy);font-weight:600;padding:17px 32px;font-size:16px;min-height:54px;
+a:hover{text-decoration:underline}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{display:block;font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:600;
+  letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--navy);
+  color:#fff;font-weight:600;padding:17px 32px;font-size:16px;min-height:54px;
   border:0;cursor:pointer;transition:background .15s}
-.btn:hover{background:#7FDFF0;color:var(--navy)}
+.btn:hover{background:#15436B;color:#fff;text-decoration:none}
 
-section{padding:104px 0}
-section h2{font-size:clamp(30px,3.4vw,44px);line-height:1.1;font-weight:700}
-.dark{background:var(--deep)}
-.light{background:var(--paper);color:var(--ink-d)}
-.light h2,.light h3{color:var(--ink-d)}
-.light .eyebrow{color:var(--accent-d)}
-.light p{color:var(--muted-d)}
+section{padding:112px 0}
+section h2{font-size:clamp(29px,3.2vw,42px);line-height:1.13}
+.mistbg{background:var(--mist)}
+.dark{background:var(--navy);color:#EAF1F7}
+.dark h2,.dark h3{color:#fff}
+.dark p{color:#AFC4D6}
 
-.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;
-  padding-top:26px;padding-bottom:26px;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:14px}
-.brand b{font-family:"Archivo",sans-serif;font-size:15px;font-weight:600;letter-spacing:.16em}
-.nav .btn{padding:12px 22px;font-size:14px;min-height:44px}
-
-/* Innglidning ved scroll — bare når JS er på, og aldri ved redusert bevegelse */
-.js .reveal{opacity:0;transform:translateY(20px);
-  transition:opacity .75s cubic-bezier(.16,1,.3,1),transform .75s cubic-bezier(.16,1,.3,1)}
+/* innglidning */
+.js .reveal{opacity:0;transform:translateY(18px);
+  transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
 .js .reveal.in{opacity:1;transform:none}
-.js .stagger>.reveal:nth-child(2){transition-delay:90ms}
-.js .stagger>.reveal:nth-child(3){transition-delay:180ms}
-.js .stagger>.reveal:nth-child(4){transition-delay:270ms}
-@media (prefers-reduced-motion:reduce){
-  .js .reveal{opacity:1;transform:none;transition:none}
-}
+.js .stagger>.reveal:nth-child(2){transition-delay:80ms}
+.js .stagger>.reveal:nth-child(3){transition-delay:160ms}
+.js .stagger>.reveal:nth-child(4){transition-delay:240ms}
+@media (prefers-reduced-motion:reduce){ .js .reveal{opacity:1;transform:none;transition:none} }
 
-.sechead{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
-.art{flex:0 0 auto}
+/* topp */
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;
+  padding:24px 0;border-bottom:1px solid var(--rule)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand b{font-family:"IBM Plex Mono",monospace;font-size:14px;font-weight:600;letter-spacing:.18em;color:var(--ink)}
+.nav .btn{padding:12px 24px;font-size:14px;min-height:44px}
 
-.hero{display:grid;grid-template-columns:1fr 440px;gap:48px;align-items:center;
-  padding:92px 0 88px;border-bottom:1px solid var(--line)}
-.hero h1{font-size:clamp(40px,4.6vw,62px);line-height:1.03;font-weight:700;
-  margin:28px 0 30px;max-width:16ch}
-.hero p.lead{font-size:20px;line-height:1.58;color:var(--soft);max-width:520px;margin:0 0 42px}
-.holoWrap{position:relative;width:100%;max-width:440px;margin:0 auto}
-#holo{display:block;width:100%;aspect-ratio:1/1.16;height:auto}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 480px;gap:64px;align-items:center;
+  padding:96px 0 92px}
+.hero h1{font-size:clamp(37px,4.1vw,56px);line-height:1.06;margin:24px 0 24px;max-width:16ch}
+.hero p.lead{font-size:21px;line-height:1.55;max-width:460px;margin:0 0 40px}
 .heroCta{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.heroCta small{font-size:15px;color:var(--muted)}
+.heroCta small{font-size:15px;color:var(--muted);max-width:230px;line-height:1.45}
+.shot{width:100%}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.shotHold{aspect-ratio:3/2;background:var(--mist);border:1px solid var(--rule);
+  display:flex;align-items:center;justify-content:center;padding:28px;text-align:center}
+.shotHold span{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;color:var(--faint)}
+.shotCap{margin-top:10px;font-size:12px;color:var(--faint)}
 
-.two{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-.panel{padding:40px}
-.panel.on{border:1px solid var(--accent-d);background:var(--card)}
-.panel.off{border:1px solid var(--rule);background:transparent}
-.panel h3{font-size:25px;font-weight:600;margin-bottom:18px}
-.panel .stack{display:flex;flex-direction:column;gap:15px}
-.panel p{font-size:16px;line-height:1.6}
-.panel.off h3{color:var(--muted-d)}
-.panel.off .eyebrow{color:#8AA3B8}
+/* tilbudsbånd */
+.offer{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
+  background:var(--mist);padding:60px 0 58px}
+.offerTop{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;
+  padding-bottom:36px;border-bottom:1px solid var(--rule)}
+.offerTop h2{font-size:clamp(27px,2.9vw,38px);line-height:1.13;margin-top:18px;max-width:14ch}
+.offerTop p{font-size:18px;line-height:1.6;max-width:440px}
+.terms{display:grid;grid-template-columns:repeat(4,1fr);gap:34px;margin-top:34px}
+.term b{display:block;font-size:15.5px;font-weight:600;color:var(--ink);margin-bottom:7px}
+.term p{font-size:14.5px;line-height:1.55}
 
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px}
-.step{border-top:2px solid var(--accent);padding-top:26px}
-.step b{display:block;font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent);margin-bottom:18px}
-.step h3{font-size:23px;font-weight:600;margin-bottom:16px}
-.step p{font-size:16px;line-height:1.6;color:#A9BFD3}
+/* to paneler */
+.two{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+.panel{padding:44px 44px 44px 0}
+.panel+.panel{padding-left:56px;border-left:1px solid var(--rule)}
+.panel h3{font-size:25px;line-height:1.22;margin:18px 0 16px}
+.panel p{font-size:16.5px;line-height:1.62}
+.panel.off h3,.panel.off p{color:var(--muted)}
+.panel.off .eyebrow{color:var(--faint)}
 
-.case{border:1px solid var(--rule);background:var(--card)}
-.caseBody{display:grid;grid-template-columns:7fr 5fr;gap:40px;padding:52px 44px}
-.caseBody h2{font-size:clamp(26px,2.8vw,38px);line-height:1.12;margin-bottom:24px}
-.quote{font-size:17px;line-height:1.62;color:var(--ink-d);border-left:2px solid var(--accent-d);padding-left:22px}
-.metrics{display:flex;flex-direction:column;gap:1px;background:var(--rule);border:1px solid var(--rule)}
-.metric{background:var(--paper);padding:26px 30px}
-.metric b{display:block;font-family:"IBM Plex Mono",monospace;font-size:34px;font-weight:500;
-  color:var(--accent-d);margin-bottom:8px}
-.metric span{font-size:14px;color:var(--muted-d)}
+/* steg */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px}
+.step{border-top:2px solid var(--accent);padding-top:24px}
+.step b{display:block;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accent);margin-bottom:16px}
+.step h3{font-size:23px;margin-bottom:13px}
+.step p{font-size:16px;line-height:1.6}
 
-.split{display:grid;grid-template-columns:5fr 7fr;gap:40px}
-.req{display:flex;gap:22px;padding-bottom:26px;border-bottom:1px solid var(--line);margin-bottom:26px}
+/* case */
+.caseBody{display:grid;grid-template-columns:7fr 5fr;gap:64px}
+.caseBody h2{font-size:clamp(26px,2.8vw,37px);line-height:1.14;margin-bottom:24px}
+.quote{font-size:17px;line-height:1.62;color:var(--ink);border-left:2px solid var(--accent);padding-left:22px}
+.metrics{display:flex;flex-direction:column}
+.metric{padding:24px 0;border-top:1px solid var(--rule)}
+.metric:last-child{border-bottom:1px solid var(--rule)}
+.metric b{display:block;font-family:"IBM Plex Mono",monospace;font-size:33px;font-weight:500;
+  color:var(--accent);margin-bottom:6px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.metric span{font-size:14px;color:var(--muted)}
+
+/* nei-seksjon */
+.split{display:grid;grid-template-columns:5fr 7fr;gap:64px}
+.req{display:flex;gap:22px;padding-bottom:26px;border-bottom:1px solid var(--lineD);margin-bottom:26px}
 .req:last-child{border:0;padding:0;margin:0}
-.req>b{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--accent);padding-top:4px}
-.req h3{font-size:19px;font-weight:600;margin-bottom:8px}
-.req p{font-size:16px;line-height:1.6;color:#A9BFD3}
+.req>b{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--accentBright);padding-top:5px}
+.req h3{font-size:19px;margin-bottom:9px}
+.req p{font-size:15.5px;line-height:1.58}
 
-.faq{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--rule);
-  border:1px solid var(--rule);margin-top:52px}
-.qa{background:var(--paper);padding:34px 36px}
-.qa h3{font-size:19px;font-weight:600;margin-bottom:12px}
-.qa p{font-size:16px;line-height:1.62}
+/* avslutning */
+.cta{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+.cta h2{margin-bottom:16px}
+.cta p{font-size:18px;line-height:1.6;max-width:560px}
 
-.cta{display:flex;align-items:flex-end;justify-content:space-between;gap:60px;flex-wrap:wrap;
-  margin-top:72px;padding-top:56px;border-top:1px solid var(--line)}
-.cta h2{font-size:clamp(34px,4vw,52px);line-height:1.06;margin-bottom:24px}
-.cta p{font-size:18px;line-height:1.62;color:var(--soft);max-width:720px}
-.cta .btn{padding:20px 38px;font-size:17px;white-space:nowrap}
-footer{padding:36px 0 48px;background:var(--deep)}
-footer span{font-size:13px;color:var(--faint)}
+footer{border-top:1px solid var(--rule);padding:38px 0 46px;font-size:14px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:underline}
 
-@media (max-width:1000px){
+@media (max-width:1040px){ :root{--pad:48px} .hero{grid-template-columns:1fr;gap:44px} .hero h1{max-width:100%} }
+@media (max-width:820px){
   :root{--pad:22px}
-  .hero{grid-template-columns:1fr;gap:30px;padding:56px 0 56px}
-  .holoWrap{max-width:290px}
-  .hero .btn{width:100%}
+  section{padding:68px 0}
+  .hero{padding:52px 0 56px}
+  .two,.steps,.split,.caseBody,.offerTop{grid-template-columns:1fr;gap:28px}
+  .terms{grid-template-columns:1fr 1fr;gap:26px}
+  .panel{padding:28px 0}
+  .panel+.panel{padding-left:0;border-left:0;border-top:1px solid var(--rule)}
+  .cta{grid-template-columns:1fr;gap:28px}
+  .hero .btn,.cta .btn{width:100%}
   .heroCta{flex-direction:column;align-items:stretch;gap:14px}
-  .heroCta small{text-align:center}
-  section{padding:56px 0}
-  .two,.steps,.split,.caseBody,.faq{grid-template-columns:1fr;gap:24px}
-  .panel,.qa{padding:28px}
-  .caseBody{padding:32px 24px}
-  .cta{flex-direction:column;align-items:stretch;margin-top:48px;padding-top:40px}
-  .cta .btn{width:100%}
-  section .btn{width:100%}
-  .sechead{grid-template-columns:1fr;gap:0}
-  .art{display:none}
-  .js .reveal{transform:translateY(14px)}
+  .heroCta small{max-width:100%;text-align:center}
+  .js .reveal{transform:translateY(12px)}
 }
+@media (max-width:480px){ .terms{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
@@ -156,8 +160,8 @@ footer span{font-size:13px;color:var(--faint)}
 <div class="wrap">
   <div class="nav">
     <div class="brand">
-      <svg width="34" height="34" viewBox="0 0 100 100" aria-label="Virnes">
-        <path d="M6 22 L50 16 L94 22 L50 28 Z" fill="#E8EFF6"/><path d="M20 36 L50 88 L80 36 L66 36 L50 64 L34 36 Z" fill="#E8EFF6"/>
+      <svg width="32" height="32" viewBox="0 0 100 100" aria-label="Virnes">
+        <path d="M6 22 L50 16 L94 22 L50 28 Z" fill="#0C2942"/><path d="M20 36 L50 88 L80 36 L66 36 L50 64 L34 36 Z" fill="#0C2942"/>
       </svg>
       <b>VIRNES</b>
     </div>
@@ -165,102 +169,109 @@ footer span{font-size:13px;color:var(--faint)}
   </div>
 
   <div class="hero">
-    <div class="heroInner reveal">
-      <span class="eyebrow">TANNIMPLANTATER</span>
-      <h1>En stødig strøm av implantatpasienter.</h1>
-      <p class="lead">Hver måned, ikke når det tilfeldigvis dukker opp noen. Du tar imot dem. Resten er vår jobb.</p>
+    <div class="reveal">
+      <span class="eyebrow">Tannimplantater</span>
+      <h1>Nye implantatpasienter hver måned.</h1>
+      <p class="lead">Vi henter dem inn. Du behandler dem.</p>
       <div class="heroCta">
         <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
         <small>20 minutter. Du får tallene for din by uansett.</small>
       </div>
     </div>
-
-    <div class="holoWrap reveal">
-      <canvas id="holo" aria-hidden="true"></canvas>
+    <div class="shot reveal">
+      <div class="shotHold"><span>BILDE KOMMER</span></div>
     </div>
   </div>
 </div>
 
-<section class="light">
+<div class="offer">
   <div class="wrap">
-    <h2 class="reveal" style="max-width:620px;margin-bottom:56px">Fra tilfeldig til forutsigbart</h2>
+    <div class="offerTop">
+      <div class="reveal">
+        <span class="eyebrow">Tilbudet</span>
+        <h2>Første måned er resultatbasert.</h2>
+      </div>
+      <p class="reveal">Kommer det ingen pasienter den første måneden, sender vi ingen faktura for jobben vår. Du betaler bare Google for annonsene — direkte, fra din egen konto.</p>
+    </div>
+    <div class="terms stagger">
+      <div class="term reveal"><b>Ingen oppstartskostnad</b><p>Ingen etableringsgebyr og ingen bindingstid.</p></div>
+      <div class="term reveal"><b>Kontoen er din</b><p>Annonsekontoen står i klinikkens navn fra dag én.</p></div>
+      <div class="term reveal"><b>Ingen prosent av budsjettet</b><p>Du bestemmer beløpet og betaler Google direkte.</p></div>
+      <div class="term reveal"><b>Én klinikk per by</b><p>Er du kunde, tar vi ikke inn konkurrenten din.</p></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="reveal" style="max-width:600px;margin-bottom:52px">Fra tilfeldig til forutsigbart</h2>
     <div class="two stagger">
       <div class="panel off reveal">
-        <span class="eyebrow" style="font-size:11px;letter-spacing:.16em;display:block;margin-bottom:20px">I DAG</span>
-        <h3>Implantat skjer når det skjer</h3>
-        <div class="stack">
-          <p>Tre pasienter i mars. Ingen i april. Ingen vet hvorfor.</p>
-          <p>Stolen som tjener mest, står tom mest.</p>
-        </div>
+        <span class="eyebrow">I dag</span>
+        <h3>Tre pasienter i mars. Ingen i april.</h3>
+        <p>Ingen vet hvorfor. Stolen som tjener mest, står tom mest.</p>
       </div>
-      <div class="panel on reveal">
-        <span class="eyebrow" style="font-size:11px;letter-spacing:.16em;display:block;margin-bottom:20px">MED OSS</span>
-        <h3>Noe som kommer inn hver måned</h3>
-        <div class="stack">
-          <p>Folk søker etter implantat hele året. Vi sørger for at de finner dere.</p>
-          <p>Du ser hvor mange som tar kontakt, og hvor de kom fra.</p>
-        </div>
+      <div class="panel reveal">
+        <span class="eyebrow">Med oss</span>
+        <h3>Nye pasienter hver måned.</h3>
+        <p>Folk leter etter implantat hele året — vi sørger for at de finner dere. Du ser nøyaktig hvor mange som tar kontakt.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="dark" id="veien">
+<section class="mistbg" id="veien">
   <div class="wrap">
-    <div class="sechead">
-      <h2 class="reveal" style="max-width:680px">Veien dit</h2>
-    </div>
+    <h2 class="reveal" style="max-width:600px">Veien dit</h2>
     <div class="steps stagger">
       <div class="step reveal">
         <b>01</b>
-        <h3>Et kort møte</h3>
-        <p>20 minutter. Vi ser på hvor mange i din by som leter etter implantat, og om det bærer.</p>
+        <h3>Kort møte</h3>
+        <p>20 min. Du får vite om det er nok pasienter å hente i din by.</p>
       </div>
       <div class="step reveal">
         <b>02</b>
         <h3>Vi setter opp alt</h3>
-        <p>Du gjør ingenting. Vi gir beskjed når det er klart, som regel innen en uke.</p>
+        <p>Du gjør ingenting. Klart innen en uke.</p>
       </div>
       <div class="step reveal">
         <b>03</b>
-        <h3>Pasientene tar kontakt</h3>
-        <p>De ringer eller fyller ut skjema. Din eneste jobb er å svare.</p>
+        <h3>Pasientene kommer</h3>
+        <p>Din eneste jobb er å ta imot dem.</p>
       </div>
     </div>
-    <div style="margin-top:60px;padding-top:34px;border-top:1px solid var(--line);display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+    <div style="margin-top:56px;padding-top:32px;border-top:1px solid var(--rule);display:flex;align-items:center;gap:24px;flex-wrap:wrap">
       <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
-      <span style="font-size:16px;color:#A9BFD3">Bærer ikke tallene i din by, sier vi det med en gang.</span>
+      <span style="font-size:16px;color:var(--muted)">Bærer ikke tallene i din by, sier vi det med en gang.</span>
     </div>
   </div>
 </section>
 
-<section class="light" id="case">
+<section id="case">
   <div class="wrap">
-    <div class="case reveal">
-      <div class="caseBody">
-        <div>
-          <span class="mono" style="font-size:11px;letter-spacing:.16em;color:#8AA3B8;display:block;margin-bottom:22px">TANNKLINIKK P&Aring; &Oslash;STLANDET &mdash; &Eacute;N M&Aring;NED</span>
-          <h2>Femten nye implantatpasienter p&aring; &eacute;n m&aring;ned.</h2>
-          <p style="font-size:17px;line-height:1.62;margin-bottom:30px">F&oslash;r fikk klinikken implantatpasienter n&aring;r det tilfeldigvis dukket opp noen. Med rundt 10 000 kr i annonsebudsjett fylte vi kalenderen med over seksti bookede timer &mdash; og minst femten av dem ble implantatbehandling.</p>
-          <p class="quote">&laquo;[Sitat fra klinikkeier &mdash; hentes inn]&raquo;</p>
-          <p style="font-size:14px;color:#8AA3B8;margin-top:16px;padding-left:24px">[Navn], [rolle]</p>
-          <p style="font-size:12.5px;line-height:1.5;color:#8AA3B8;margin-top:30px">Faktiske tall fra &eacute;n klinikk, avrundet. Resultatet varierer med by, konkurranse og kapasitet &mdash; vi lover ingen de samme tallene.</p>
-        </div>
-        <div class="metrics">
-          <div class="metric"><b>15+</b><span>Nye implantatpasienter p&aring; &eacute;n m&aring;ned</span></div>
-          <div class="metric"><b>8 av 10</b><span>Henvendelser som ble til en booket time</span></div>
-          <div class="metric"><b>&lt; 700 kr</b><span>Annonsekost per ny implantatpasient</span></div>
-        </div>
+    <div class="caseBody reveal">
+      <div>
+        <span class="eyebrow" style="color:var(--faint);margin-bottom:20px">Tannklinikk på Østlandet — én måned</span>
+        <h2>Femten nye implantatpasienter på én måned.</h2>
+        <p style="font-size:17.5px;line-height:1.62;margin-bottom:30px">Klinikken hadde implantatpasienter når det tilfeldig dukket opp noen. Vi brukte 10 000 kr på annonser og fylte kalenderen med over seksti bookede timer. Minst femten ble implantatbehandling.</p>
+        <p class="quote">«[Sitat fra klinikkeier — hentes inn]»</p>
+        <p style="font-size:14px;color:var(--faint);margin-top:16px;padding-left:24px">[Navn], [rolle]</p>
+        <p style="font-size:12.5px;line-height:1.5;color:var(--faint);margin-top:30px">Faktiske tall fra én klinikk, avrundet. Bookede timer er ikke det samme som gjennomført behandling. Resultatet varierer med by, konkurranse og kapasitet — vi lover ingen de samme tallene.</p>
+      </div>
+      <div class="metrics">
+        <div class="metric"><b>15+</b><span>Nye implantatpasienter på én måned</span></div>
+        <div class="metric"><b>8 av 10</b><span>Henvendelser som ble til en booket time</span></div>
+        <div class="metric"><b>&lt; 700 kr</b><span>Annonsekost per ny implantatpasient</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="dark">
   <div class="wrap split">
     <div class="reveal">
       <h2 style="margin-bottom:22px">Vi sier nei til de fleste</h2>
-      <p style="font-size:17px;line-height:1.62;color:#A9BFD3">Tre situasjoner der du ikke bør bruke penger på oss. Vi sier fra før du gjør det.</p>
+      <p style="font-size:17px;line-height:1.62">Tre situasjoner der du ikke bør bruke penger på oss. Vi sier fra før du gjør det.</p>
     </div>
     <div class="stagger">
       <div class="req reveal"><b>01</b><div><h3>Ingen ringer tilbake samme dag</h3><p>Pasienten kontakter flere klinikker. Den som svarer først, får henne.</p></div></div>
@@ -270,42 +281,9 @@ footer span{font-size:13px;color:var(--faint)}
   </div>
 </section>
 
-<section class="light" id="tilbud">
-  <div class="wrap">
-    <div class="sechead">
-      <div class="reveal">
-        <h2 style="max-width:660px;margin-bottom:20px">Første måned betaler du oss ingenting</h2>
-        <p style="font-size:18px;line-height:1.62;max-width:620px">Kommer det ingen pasienter, sender vi ingen faktura. Så enkelt er det.</p>
-      </div>
-    </div>
-    <div class="faq stagger">
-      <div class="qa reveal">
-        <h3>Ingen oppstartskostnad</h3>
-        <p>Ingen etableringsgebyr og ingen bindingstid. Du kan si opp når du vil.</p>
-      </div>
-      <div class="qa reveal">
-        <h3>Du eier alt vi bygger</h3>
-        <p>Annonsekontoen står i klinikkens navn fra dag én. Slutter vi, beholder du kontoen og alle tallene.</p>
-      </div>
-      <div class="qa reveal">
-        <h3>Annonsebudsjettet er ditt</h3>
-        <p>Du bestemmer det selv og betaler direkte til Google. Vi tar ingen prosent av forbruket.</p>
-      </div>
-      <div class="qa reveal">
-        <h3>Vi tar få klinikker</h3>
-        <p>Én klinikk per by. Er du kunde hos oss, tar vi ikke inn konkurrenten din i samme område.</p>
-      </div>
-    </div>
-    <div style="margin-top:44px;display:flex;align-items:center;gap:24px;flex-wrap:wrap">
-      <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte</a>
-      <span style="font-size:16px;color:var(--muted-d)">Vi går gjennom tallene for din by sammen.</span>
-    </div>
-  </div>
-</section>
-
 <section>
   <div class="wrap">
-    <div class="cta reveal" style="margin-top:0;padding-top:0;border:0">
+    <div class="cta reveal">
       <div>
         <h2>Er byen din ledig?</h2>
         <p>20 minutter. Du får vite hvor mange som leter etter implantat der du holder til, og hva det er verdt for klinikken. Tallene er dine uansett.</p>
@@ -318,8 +296,8 @@ footer span{font-size:13px;color:var(--faint)}
 <footer>
   <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
     <div class="brand">
-      <svg width="26" height="26" viewBox="0 0 100 100">
-        <path d="M6 22 L50 16 L94 22 L50 28 Z" fill="#6F8CA8"/><path d="M20 36 L50 88 L80 36 L66 36 L50 64 L34 36 Z" fill="#6F8CA8"/>
+      <svg width="24" height="24" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M6 22 L50 16 L94 22 L50 28 Z" fill="#94A7B8"/><path d="M20 36 L50 88 L80 36 L66 36 L50 64 L34 36 Z" fill="#94A7B8"/>
       </svg>
       <span>Questa Scale AS · org.nr. 930 208 469</span>
     </div>
@@ -346,188 +324,7 @@ footer span{font-size:13px;color:var(--faint)}
       else io.observe(el);
     });
   } catch (err) { showAll(); return; }
-  // Sikkerhetsnett: om observeren aldri fyrer, vis alt heller enn å la siden stå tom
   setTimeout(function(){ if (!document.querySelector('.reveal.in')) showAll(); }, 1200);
-})();
-</script>
-
-
-<script>
-(function(){
-  var cv = document.getElementById('holo');
-  if (!cv || !cv.getContext) return;
-  var ctx = cv.getContext('2d');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var SQ = 0.80;
-  function sup(th, n){
-    var c = Math.abs(Math.cos(th)), s = Math.abs(Math.sin(th));
-    return 1/Math.pow(Math.pow(c,n)+Math.pow(s,n), 1/n);
-  }
-  function lerp(a,b,t){ return a+(b-a)*t; }
-  function curve(pts, y){
-    for (var i=1;i<pts.length;i++){
-      if (y <= pts[i][0]){
-        var a=pts[i-1], b=pts[i], t=(y-a[0])/(b[0]-a[0]);
-        return lerp(a[1], b[1], t*t*(3-2*t));
-      }
-    }
-    return pts[pts.length-1][1];
-  }
-  function part(o){
-    var rows = [];
-    for (var i=0;i<=o.rings;i++){
-      var t = i/o.rings, y = lerp(o.y0,o.y1,t), row = [];
-      var r = o.rad(y,t), ox = o.cx?o.cx(y,t):0, n = o.n?o.n(y,t):2;
-      for (var j=0;j<o.merid;j++){
-        var th = j/o.merid*Math.PI*2, s = sup(th,n);
-        row.push({
-          x: ox + r*s*Math.cos(th),
-          z: r*s*Math.sin(th)*SQ,
-          y: y + (o.yOff ? o.yOff(y,th) : 0)
-        });
-      }
-      rows.push(row);
-    }
-    return { rows: rows, merid: o.merid, rings: o.rings, closed: o.closed !== false };
-  }
-  var CROWN = [[0,0.335],[0.04,0.395],[0.12,0.418],[0.24,0.415],[0.33,0.392],[0.40,0.345]];
-  var crown = part({
-    y0:0, y1:0.40, rings:14, merid:28,
-    rad:  function(y){ return curve(CROWN,y); },
-    n:    function(y,t){ return lerp(3.1, 2.25, t); },
-    yOff: function(y,th){
-      if (y > 0.13) return 0;
-      var m = 1 - y/0.13;
-      return -0.062*m*Math.pow(Math.abs(Math.cos(2*th)),1.3);
-    }
-  });
-  var trunk = part({
-    y0:0.40, y1:0.55, rings:5, merid:28,
-    rad: function(y,t){ return lerp(0.345,0.255,t); },
-    n:   function(y,t){ return lerp(2.25,2.0,t); }
-  });
-  function root(sign){
-    return part({
-      y0:0.55, y1:1.0, rings:12, merid:10,
-      rad: function(y,t){ return 0.148*Math.pow(1-t*0.94,0.7); },
-      cx:  function(y,t){ return sign*(0.105 + 0.285*Math.pow(t,1.1)); }
-    });
-  }
-  var PARTS = [crown, trunk, root(1), root(-1)];
-  var CYAN='54,201,232', PALE='198,241,252';
-  var W=0,H=0,DPR=1;
-  function resize(){
-    DPR = Math.min(window.devicePixelRatio||1, 2);
-    var r = cv.getBoundingClientRect();
-    W = Math.max(1,Math.round(r.width)); H = Math.max(1,Math.round(r.height));
-    cv.width = W*DPR; cv.height = H*DPR;
-    ctx.setTransform(DPR,0,0,DPR,0,0);
-  }
-  var t0 = null;
-  function frame(ts){
-    if (t0===null) t0 = ts;
-    draw((ts-t0)/1000);
-    if (!reduce) requestAnimationFrame(frame);
-  }
-  function draw(t){
-    ctx.clearRect(0,0,W,H);
-    var cx = W/2, cy = H*0.47;
-    var S  = Math.min(W*0.80, H*0.52);
-    var ang = t*0.40, ca = Math.cos(ang), sa = Math.sin(ang);
-    var br  = 1 + Math.sin(t*0.85)*0.011;
-    var D = 3.2, YS = 1.30;
-    var g = ctx.createRadialGradient(cx, cy, 0, cx, cy, S*1.0);
-    g.addColorStop(0,'rgba('+CYAN+',0.15)');
-    g.addColorStop(0.5,'rgba('+CYAN+',0.055)');
-    g.addColorStop(1,'rgba('+CYAN+',0)');
-    ctx.fillStyle = g; ctx.fillRect(0,0,W,H);
-    var scanY = Math.sin(t*0.5)*0.5+0.5, band = 0.055;
-    var NB = 7, buckets = [], hot = [], i,j,k;
-    for (i=0;i<NB;i++) buckets.push([]);
-    function proj(p){
-      var xr =  p.x*ca + p.z*sa;
-      var zr = -p.x*sa + p.z*ca;
-      var kk = D/(D + zr*0.85);
-      return { X: cx + xr*kk*S*br, Y: cy + (p.y-0.44)*kk*S*YS*br, d: zr };
-    }
-    function seg(a,b,my){
-      var nr = 1 - Math.abs(my-scanY)/band;
-      if (nr > 0) hot.push([a,b,nr]);
-      var f = (( (a.d+b.d)/2 ) + 0.55)/1.10;
-      f = f<0?0:f>1?1:f;
-      buckets[Math.min(NB-1, Math.floor(f*NB))].push([a,b]);
-    }
-    for (k=0;k<PARTS.length;k++){
-      var P = PARTS[k], pr = [];
-      for (i=0;i<P.rows.length;i++){
-        var row = P.rows[i], o = [];
-        for (j=0;j<row.length;j++) o.push(proj(row[j]));
-        pr.push(o);
-      }
-      for (i=0;i<pr.length;i++){
-        var my = P.rows[i][0].y;
-        for (j=0;j<P.merid;j++) seg(pr[i][j], pr[i][(j+1)%P.merid], my);
-      }
-      for (j=0;j<P.merid;j++){
-        for (i=0;i<P.rings;i++)
-          seg(pr[i][j], pr[i+1][j], (P.rows[i][0].y+P.rows[i+1][0].y)/2);
-      }
-    }
-    ctx.lineCap = 'round';
-    for (i=0;i<NB;i++){
-      var arr = buckets[i]; if (!arr.length) continue;
-      var f = i/(NB-1);
-      ctx.strokeStyle = 'rgba('+CYAN+','+(0.06 + f*0.44).toFixed(3)+')';
-      ctx.lineWidth = 0.55 + f*0.75;
-      ctx.beginPath();
-      for (j=0;j<arr.length;j++){ ctx.moveTo(arr[j][0].X,arr[j][0].Y); ctx.lineTo(arr[j][1].X,arr[j][1].Y); }
-      ctx.stroke();
-    }
-    if (hot.length){
-      ctx.shadowColor = 'rgba('+CYAN+',0.9)'; ctx.shadowBlur = 10;
-      ctx.lineWidth = 1.3;
-      for (var hb=0; hb<3; hb++){
-        var lo = hb/3, hi = (hb+1)/3, any = false;
-        ctx.beginPath();
-        for (i=0;i<hot.length;i++){
-          if (hot[i][2] <= lo || hot[i][2] > hi) continue;
-          any = true;
-          ctx.moveTo(hot[i][0].X,hot[i][0].Y); ctx.lineTo(hot[i][1].X,hot[i][1].Y);
-        }
-        if (!any) continue;
-        ctx.strokeStyle = 'rgba('+PALE+','+(0.22 + hb*0.30).toFixed(2)+')';
-        ctx.stroke();
-      }
-      ctx.shadowBlur = 0;
-    }
-    var baseY = cy + (1.09-0.44)*S*YS*br, bw = S*0.36;
-    ctx.save(); ctx.translate(cx, baseY);
-    var bg = ctx.createRadialGradient(0,0,0,0,0,bw*1.3);
-    bg.addColorStop(0,'rgba('+CYAN+',0.20)');
-    bg.addColorStop(1,'rgba('+CYAN+',0)');
-    ctx.save(); ctx.scale(1,0.26); ctx.fillStyle = bg;
-    ctx.beginPath(); ctx.arc(0,0,bw*1.3,0,Math.PI*2); ctx.fill(); ctx.restore();
-    for (i=0;i<3;i++){
-      var rr = bw*(0.5 + i*0.30);
-      var al = 0.30 - i*0.085 + Math.sin(t*1.5 - i*0.9)*0.035;
-      ctx.strokeStyle = 'rgba('+CYAN+','+Math.max(0,al).toFixed(3)+')';
-      ctx.lineWidth = i===0 ? 1.5 : 1;
-      ctx.beginPath(); ctx.ellipse(0,0,rr,rr*0.25,0,0,Math.PI*2); ctx.stroke();
-    }
-    ctx.restore();
-    var gl = Math.sin(t*3.1)*Math.sin(t*7.7);
-    if (gl > 0.94){
-      ctx.fillStyle = 'rgba('+PALE+',0.10)';
-      ctx.fillRect(cx-S*0.5, cy + Math.sin(t*13)*S*0.35, S, 1.6);
-    }
-  }
-  function start(){ resize(); if (reduce) draw(2.4); else requestAnimationFrame(frame); }
-  var rt;
-  window.addEventListener('resize', function(){
-    clearTimeout(rt); rt = setTimeout(function(){ resize(); if (reduce) draw(2.4); }, 150);
-  });
-  if (document.readyState !== 'loading') start();
-  else document.addEventListener('DOMContentLoaded', start);
 })();
 </script>
 
