@@ -165,19 +165,6 @@ html:not(.js) .hl path{stroke-dashoffset:0}
 .step p{font-size:16px;line-height:1.6}
 
 /* ---------- case ---------- */
-.caseBody{display:grid;grid-template-columns:7fr 5fr;gap:64px}
-.caseBody h2{font-size:clamp(26px,2.8vw,37px);line-height:1.14;margin-bottom:24px}
-.metrics{display:flex;flex-direction:column}
-.metric{padding:24px 0;border-top:1px solid var(--rule)}
-.metric:last-child{border-bottom:1px solid var(--rule)}
-.metric b{display:block;font-family:"IBM Plex Mono",monospace;font-size:34px;font-weight:500;
-  color:var(--accent);margin-bottom:6px;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.metric span{font-size:14px;color:var(--muted)}
-.pips{display:flex;gap:6px;margin:4px 0 10px;flex-wrap:wrap}
-.pips i{width:9px;height:9px;background:#DCE5EE;transform:rotate(45deg) scale(.6);transition:background .3s,transform .4s var(--ease)}
-.pips.round i{border-radius:50%;transform:scale(.6);width:10px;height:10px}
-.pips i.on{background:var(--accent);transform:rotate(45deg) scale(1)}
-.pips.round i.on{transform:scale(1)}
 
 /* ---------- avslutning ---------- */
 .ctaCard{position:relative;overflow:hidden;background:var(--mist);border:1px solid var(--rule);padding:64px 64px}
@@ -302,15 +289,6 @@ html:not(.js) .hl path{stroke-dashoffset:0}
 .panel.on .chart .m{color:#8FA7BC}
 .chart .col.hot .m{color:#fff}
 
-/* case-tallene: mørk blokk */
-.metrics{background:#0C2942;padding:10px 36px}
-.metric{border-top:1px solid rgba(255,255,255,.1)}
-.metric:first-child{border-top:0}
-.metric:last-child{border-bottom:0}
-.metric b{color:#35C9E8}
-.metric span{color:#AFC4D6}
-.pips i{background:rgba(255,255,255,.14)}
-.pips i.on{background:#35C9E8}
 
 /* tilbudet: mer fremhevet */
 .offer .hi{color:#35C9E8}
@@ -318,7 +296,6 @@ html:not(.js) .hl path{stroke-dashoffset:0}
 .btn.light{background:var(--accentBright);color:var(--navy)}
 .btn.light:hover{color:var(--navy);box-shadow:0 16px 36px -12px rgba(143,212,228,.6)}
 @media (max-width:820px){
-  .metrics{padding:6px 22px}
   .offerCta .btn{width:100%}
 }
 
@@ -329,8 +306,30 @@ html:not(.js) .hl path{stroke-dashoffset:0}
 .ev.t-fylling{--c:#F5B85B;background:rgba(245,184,91,.15);color:#F9DBAA}
 .ev.t-akutt{--c:#F2787F;background:rgba(242,120,127,.16);color:#F9BCC0}
 .ev.t-rotfylling{--c:#C592F5;background:rgba(197,146,245,.15);color:#E1C8FA}
-.metric b{color:#3DDC97}
-.pips i.on{background:#3DDC97}
+
+/* ---------- case v3: stor overskrift, bilde, tallbånd ---------- */
+.caseTop{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:72px;align-items:center}
+.caseEy{color:var(--faint);margin-bottom:22px}
+.caseH{font-size:clamp(44px,4.8vw,74px);line-height:1;letter-spacing:-.035em;hyphens:manual}
+.caseImg{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:5/6;background:var(--mist);box-shadow:0 40px 80px -50px rgba(12,41,66,.55)}
+.caseImg img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.6s var(--ease)}
+.caseImg.in img{transform:none}
+.caseBar{margin-top:56px;background:#0C2942;display:grid;grid-template-columns:repeat(3,1fr)}
+.stat{padding:38px 40px 36px;border-left:1px solid rgba(255,255,255,.1)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:"IBM Plex Mono",monospace;font-size:clamp(38px,4vw,58px);font-weight:500;line-height:1;
+  color:#3DDC97;letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin-bottom:14px;white-space:nowrap}
+.stat span{font-size:14.5px;color:#AFC4D6}
+@media (max-width:1040px){ .caseTop{gap:48px} }
+@media (max-width:820px){
+  .caseTop{grid-template-columns:1fr;gap:28px}
+  .caseH{font-size:clamp(36px,10vw,56px)}
+  .caseImg{aspect-ratio:4/3}
+  .caseBar{grid-template-columns:1fr;margin-top:32px}
+  .stat{padding:20px 22px;border-left:0;border-top:1px solid rgba(255,255,255,.1)}
+  .stat b{font-size:36px;margin-bottom:8px}
+  .stat:first-child{border-top:0}
+}
 
 footer{border-top:1px solid var(--rule);padding:38px 0 46px;font-size:14px;color:var(--muted)}
 footer a{color:var(--muted);text-decoration:underline}
@@ -341,7 +340,7 @@ footer a{color:var(--muted);text-decoration:underline}
   :root{--pad:20px}
   section{padding:68px 0}
   .hero{padding:72px 0 74px}
-  .two,.steps,.caseBody{grid-template-columns:1fr;gap:28px}
+  .two,.steps{grid-template-columns:1fr;gap:28px}
   .steps{gap:44px}
   .panel{padding:30px 22px 26px}
   .chart{gap:4px;height:96px}
@@ -482,18 +481,17 @@ footer a{color:var(--muted);text-decoration:underline}
 
 <section id="case">
   <div class="wrap">
-    <div class="caseBody reveal">
-      <div>
-        <span class="eyebrow" style="color:var(--faint);margin-bottom:20px">Tannklinikk på Østlandet — én måned</span>
-        <h2>Femten nye implantatpasienter på én måned.</h2>
-        <p style="font-size:17.5px;line-height:1.62">Klinikken hadde implantatpasienter når det tilfeldig dukket opp noen. Vi brukte 10 000 kr på annonser og fylte kalenderen med over seksti bookede timer. Minst femten ble implantatbehandling.</p>
-        <p style="font-size:12.5px;line-height:1.5;color:var(--faint);margin-top:30px">Faktiske tall fra én klinikk, avrundet. Bookede timer er ikke det samme som gjennomført behandling. Resultatet varierer med by, konkurranse og kapasitet — vi lover ingen de samme tallene.</p>
+    <div class="caseTop">
+      <div class="reveal">
+        <span class="eyebrow caseEy">Tannklinikk på Østlandet</span>
+        <h2 class="caseH">Femten nye implantat&shy;pasienter på én måned.</h2>
       </div>
-      <div class="metrics">
-        <div class="metric"><b data-count="15" data-suffix="+">15+</b><div class="pips" data-n="15" data-on="15"></div><span>Nye implantatpasienter på én måned</span></div>
-        <div class="metric"><b data-count="8" data-suffix=" av 10">8 av 10</b><div class="pips round" data-n="10" data-on="8"></div><span>Henvendelser som ble til en booket time</span></div>
-        <div class="metric"><b data-count="700" data-prefix="&lt; " data-suffix=" kr" data-down="1">&lt; 700 kr</b><span>Annonsekost per ny implantatpasient</span></div>
-      </div>
+      <figure class="caseImg reveal"><img src="/case-klinikk.jpg" alt="Behandlingsrom på tannklinikk" width="880" height="1100" loading="lazy"></figure>
+    </div>
+    <div class="caseBar reveal">
+      <div class="stat"><b data-count="15" data-suffix="+">15+</b><span>Nye implantatpasienter på én måned</span></div>
+      <div class="stat"><b data-count="80" data-suffix="%">80%</b><span>Henvendelser som ble til en booket time</span></div>
+      <div class="stat"><b data-count="700" data-prefix="&lt; " data-suffix=" kr" data-down="1">&lt; 700 kr</b><span>Annonsekost per ny implantatpasient</span></div>
     </div>
   </div>
 </section>
