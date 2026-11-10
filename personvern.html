@@ -4,38 +4,43 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Personvernerklæring — Virnes</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-303 -154 1099 1099'%3E%3Crect x='-303' y='-154' width='1099' height='1099' fill='%230C2942'/%3E%3Cpath fill='%23fff' d='M494 261H402L247 701L92 261H0L193 791H301Z'/%3E%3Cpath fill='%2335C9E8' d='M247 0L342 95L247 190L152 95Z'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#12161B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2312161B'/%3E%3Cg stroke='%235FE3DA' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M50 50L74 50M50 50L62 70.8M50 50L38 70.8M50 50L26 50M50 50L38 29.2M50 50L62 29.2'/%3E%3C/g%3E%3Cg fill='%235FE3DA'%3E%3Ccircle cx='74' cy='50' r='7'/%3E%3Ccircle cx='62' cy='70.8' r='7'/%3E%3Ccircle cx='38' cy='70.8' r='7'/%3E%3Ccircle cx='26' cy='50' r='7'/%3E%3Ccircle cx='38' cy='29.2' r='7'/%3E%3Ccircle cx='62' cy='29.2' r='7'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='10' fill='%23E9EEF2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
+<script>if(/[?&]tema=lys\b/.test(location.search))document.documentElement.setAttribute("data-theme","light");</script>
 <style>
-:root{--navy:#04203E;--deep:#02182F;--accent:#35C9E8;--ink:#E8EFF6;--muted:#94AEC6;--faint:#6F8CA8;
-  --paper:#F2F6FA;--ink-d:#0B2239;--muted-d:#4E6C88;--rule:#DCE5EE;--line:rgba(232,239,246,.10)}
+:root{--bg:#12161B;--bg2:#0E1216;--surface:#181D23;--line:#262D36;--ink:#E9EEF2;--body:#AAB4BF;--muted:#8C97A4;
+  --accent:#5FE3DA;--accentText:#5FE3DA;--symLine:#5FE3DA;--symNode:#5FE3DA;--symCore:#E9EEF2;color-scheme:dark}
+[data-theme="light"]{--bg:#FFFFFF;--bg2:#F5F7FA;--surface:#F5F7FA;--line:#E1E6EE;--ink:#0C1C35;--body:#4A5B74;--muted:#56667E;
+  --accent:#C8733F;--accentText:#A85A2A;--symLine:#0C1C35;--symNode:#0C1C35;--symCore:#C8733F;color-scheme:light}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink-d);
-  font-family:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
-h1,h2{font-family:"Archivo",Helvetica,sans-serif;margin:0;letter-spacing:-.02em}
-a{color:#0B6E88}
+html{-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--body);
+  font-family:"Geist","Segoe UI",system-ui,sans-serif;line-height:1.62;-webkit-font-smoothing:antialiased}
+h1,h2{font-family:"Geist",system-ui,sans-serif;margin:0;letter-spacing:-.025em;color:var(--ink)}
+strong{color:var(--ink);font-weight:600}
+a{color:var(--accentText)}
 .wrap{max-width:760px;margin:0 auto;padding:0 24px}
-.top{background:var(--navy)}
-.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:22px;padding-bottom:22px}
-.brand{display:flex;align-items:center;gap:13px;text-decoration:none}
-.brand b{font-family:"Archivo",sans-serif;font-size:14px;font-weight:600;letter-spacing:.16em;color:var(--ink)}
+.top{background:var(--bg2);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:20px;padding-bottom:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand .word{font-weight:300;font-size:17px;line-height:1;letter-spacing:.3em;margin-right:-.3em;color:var(--ink)}
 .top a.back{font-size:14px;color:var(--muted);text-decoration:none}
 .top a.back:hover{color:var(--ink)}
 main{padding:64px 0 80px}
-h1{font-size:34px;line-height:1.15;font-weight:700;margin-bottom:10px}
-.updated{font-size:14px;color:var(--muted-d);margin:0 0 44px}
-h2{font-size:19px;font-weight:600;margin:38px 0 12px}
+h1{font-size:34px;line-height:1.15;font-weight:500;margin-bottom:10px}
+.updated{font-size:14px;color:var(--muted);margin:0 0 44px}
+h2{font-size:19px;font-weight:500;margin:38px 0 12px}
 p{margin:0 0 14px}
 ul{margin:0 0 14px;padding-left:20px}
 li{margin-bottom:7px}
-.note{background:#FFF;border-left:2px solid var(--accent);padding:14px 18px;margin:0 0 14px;font-size:15px}
-footer{background:var(--deep);padding:28px 0 40px}
+.note{background:var(--surface);border-left:2px solid var(--accent);padding:14px 18px;margin:0 0 14px;font-size:15px}
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:28px 0 40px}
 footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
-footer span,footer a{font-size:13px;color:var(--faint);text-decoration:none}
-footer a:hover{color:var(--muted)}
+footer span,footer a{font-size:13px;color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--ink)}
 @media (max-width:700px){main{padding:40px 0 56px}h1{font-size:27px}}
 </style>
 </head>
@@ -43,12 +48,17 @@ footer a:hover{color:var(--muted)}
 
 <div class="top">
   <div class="wrap">
-    <a class="brand" href="/">
-      <svg width="96" height="26" viewBox="0 0 2634 713" role="img" aria-label="Virnes">
-        <path d="M494 171H402L247 611L92 171H0L193 701H301ZM576 171V701H662V171ZM802 171V701H888V385C888 294 925 247 1006 247H1058V171H1006C937 171 898 201 881 266L878 171ZM1135 171V701H1221V384C1221 287 1276 235 1360 235C1439 235 1471 287 1471 384V701H1557V360C1557 248 1499 159 1378 159C1305 159 1243 191 1216 262L1213 171ZM1649 436C1649 605 1745 713 1892 713C1994 713 2084 651 2115 551L2023 544C1999 599 1948 631 1892 631C1802 631 1748 569 1740 463H2123L2122 424C2113 234 2008 159 1892 159C1745 159 1649 267 1649 436ZM1742 387C1756 295 1809 241 1892 241C1955 241 2014 277 2029 387ZM2534 335 2624 329C2607 226 2520 159 2414 159C2292 159 2210 223 2210 325C2210 429 2314 456 2410 478C2470 492 2544 498 2544 561C2544 615 2477 631 2427 631C2348 631 2298 591 2287 528L2197 534C2205 644 2301 713 2427 713C2527 713 2634 669 2634 566C2634 460 2545 427 2425 404C2369 393 2300 372 2300 320C2300 270 2347 241 2405 241C2463 241 2522 276 2534 335Z" fill="#E8EFF6"/><path d="M619 0L675 56L619 112L563 56Z" fill="#35C9E8"/>
+    <a class="brand" href="/" data-keep-theme aria-label="Virnes">
+      <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+        <g style="stroke:var(--symLine)" stroke-width="2.4" stroke-linecap="round"><line x1="50" y1="50" x2="72" y2="50"/><line x1="50" y1="50" x2="61" y2="69.05"/><line x1="50" y1="50" x2="39" y2="69.05"/><line x1="50" y1="50" x2="28" y2="50"/><line x1="50" y1="50" x2="39" y2="30.95"/><line x1="50" y1="50" x2="61" y2="30.95"/></g>
+        <g style="stroke:var(--symLine)" stroke-width="1.6" stroke-linecap="round" opacity=".55"><line x1="72" y1="50" x2="88.64" y2="39.65"/><line x1="72" y1="50" x2="88.64" y2="60.35"/><line x1="61" y1="69.05" x2="78.28" y2="78.28"/><line x1="61" y1="69.05" x2="60.35" y2="88.64"/><line x1="39" y1="69.05" x2="39.65" y2="88.64"/><line x1="39" y1="69.05" x2="21.72" y2="78.28"/><line x1="28" y1="50" x2="11.36" y2="60.35"/><line x1="28" y1="50" x2="11.36" y2="39.65"/><line x1="39" y1="30.95" x2="21.72" y2="21.72"/><line x1="39" y1="30.95" x2="39.65" y2="11.36"/><line x1="61" y1="30.95" x2="60.35" y2="11.36"/><line x1="61" y1="30.95" x2="78.28" y2="21.72"/></g>
+        <g style="fill:var(--symNode)"><circle cx="72" cy="50" r="4.6"/><circle cx="61" cy="69.05" r="4.6"/><circle cx="39" cy="69.05" r="4.6"/><circle cx="28" cy="50" r="4.6"/><circle cx="39" cy="30.95" r="4.6"/><circle cx="61" cy="30.95" r="4.6"/></g>
+        <g style="fill:var(--symNode)" opacity=".7"><circle cx="88.64" cy="39.65" r="3"/><circle cx="88.64" cy="60.35" r="3"/><circle cx="78.28" cy="78.28" r="3"/><circle cx="60.35" cy="88.64" r="3"/><circle cx="39.65" cy="88.64" r="3"/><circle cx="21.72" cy="78.28" r="3"/><circle cx="11.36" cy="60.35" r="3"/><circle cx="11.36" cy="39.65" r="3"/><circle cx="21.72" cy="21.72" r="3"/><circle cx="39.65" cy="11.36" r="3"/><circle cx="60.35" cy="11.36" r="3"/><circle cx="78.28" cy="21.72" r="3"/></g>
+        <circle cx="50" cy="50" r="8" style="fill:var(--symCore)"/>
       </svg>
+      <span class="word" aria-hidden="true">VIRNES</span>
     </a>
-    <a class="back" href="/">Tilbake til forsiden</a>
+    <a class="back" href="/" data-keep-theme>Tilbake til forsiden</a>
   </div>
 </div>
 
@@ -115,9 +125,15 @@ footer a:hover{color:var(--muted)}
 <footer>
   <div class="wrap">
     <span>Questa Scale AS · 930 208 469</span>
-    <span><a href="/">Forsiden</a></span>
+    <span><a href="/" data-keep-theme>Forsiden</a></span>
   </div>
 </footer>
 
+<script>
+if(document.documentElement.getAttribute("data-theme")==="light"){
+  [].forEach.call(document.querySelectorAll("[data-keep-theme]"),function(a){a.setAttribute("href","/?tema=lys")});
+  var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#FFFFFF");
+}
+</script>
 </body>
 </html>
