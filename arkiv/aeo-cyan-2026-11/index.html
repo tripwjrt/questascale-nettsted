@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virnes — når pasientene spør AI, skal svaret være din klinikk</title>
+<meta name="description" content="AEO, GEO, SEO og Google Ads for tannklinikker. Flere nye pasienter hver måned fra ChatGPT, Google og annonsene. Se hva AI sier om klinikken din.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://virnes.com/">
+<meta property="og:site_name" content="Virnes">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:title" content="Virnes — når pasientene spør AI, skal svaret være din klinikk">
+<meta property="og:description" content="AEO, GEO, SEO og Google Ads for tannklinikker. Flere nye pasienter hver måned fra ChatGPT, Google og annonsene. Se hva AI sier om klinikken din.">
+<meta property="og:image" content="https://virnes.com/arkiv/aeo-cyan-2026-11/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Virnes – Pasientene spør AI. Sørg for at svaret er deg.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://virnes.com/arkiv/aeo-cyan-2026-11/og-image.jpg">
+<meta name="theme-color" content="#12161B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2312161B'/%3E%3Cg stroke='%235FE3DA' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M50 50L74 50M50 50L62 70.8M50 50L38 70.8M50 50L26 50M50 50L38 29.2M50 50L62 29.2'/%3E%3C/g%3E%3Cg fill='%235FE3DA'%3E%3Ccircle cx='74' cy='50' r='7'/%3E%3Ccircle cx='62' cy='70.8' r='7'/%3E%3Ccircle cx='38' cy='70.8' r='7'/%3E%3Ccircle cx='26' cy='50' r='7'/%3E%3Ccircle cx='38' cy='29.2' r='7'/%3E%3Ccircle cx='62' cy='29.2' r='7'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='10' fill='%23E9EEF2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:84px;background:#12161B}
+body{margin:0;background:#12161B}
+html:has(.site[data-theme="light"]),body:has(.site[data-theme="light"]){background:#FFFFFF}
+.site{--bg:#12161B;--bg2:#0E1216;--surface:#181D23;--surface2:#1D232A;--line:#262D36;--ink:#E9EEF2;--body:#AAB4BF;--muted:#8C97A4;--faint:#6E7987;
+  --accent:#5FE3DA;--accentText:#5FE3DA;--accentSoft:rgba(95,227,218,.12);--btnBg:#5FE3DA;--btnInk:#0B1014;
+  --block:#0B0E12;--blockInk:#E9EEF2;--blockBody:#AAB4BF;--blockAccent:#5FE3DA;--blockLine:rgba(233,238,242,.09);
+  --symLine:#5FE3DA;--symNode:#5FE3DA;--symCore:#E9EEF2;--shadow:rgba(0,0,0,.55);--glow:rgba(95,227,218,.10);
+  background:var(--bg);color:var(--ink);font-family:"Geist",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;min-height:100%;overflow-x:hidden}
+.site[data-theme="light"]{--bg:#FFFFFF;--bg2:#F5F7FA;--surface:#FFFFFF;--surface2:#F5F7FA;--line:#E1E6EE;--ink:#0C1C35;--body:#4A5B74;--muted:#56667E;--faint:#7A889C;
+  --accent:#C8733F;--accentText:#A85A2A;--accentSoft:rgba(200,115,63,.12);--btnBg:#0C1C35;--btnInk:#FFFFFF;
+  --block:#0C1C35;--blockInk:#F4F7FB;--blockBody:#B9C6D6;--blockAccent:#E2A275;--blockLine:rgba(255,255,255,.1);
+  --symLine:#0C1C35;--symNode:#0C1C35;--symCore:#C8733F;--shadow:rgba(12,28,53,.35);--glow:rgba(226,162,117,.18)}
+.site *{box-sizing:border-box}
+.site h1,.site h2,.site h3{margin:0;font-weight:500;letter-spacing:-.03em;color:var(--ink);text-wrap:balance}
+.site p{margin:0;color:var(--body);text-wrap:pretty}
+.site a{color:var(--accentText);text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+.eye{display:inline-flex;align-items:center;gap:10px;font-family:"Geist Mono",monospace;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accentText)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accentSoft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:10px;border:0;cursor:pointer;
+  background:var(--btnBg);color:var(--btnInk)!important;font:600 16px "Geist",sans-serif;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px var(--shadow)}
+.btn.ghost{background:transparent;color:var(--ink)!important;border:1px solid var(--line)}
+.btn.block{background:var(--blockAccent);color:#0B1014!important}
+.site[data-theme="light"] .btn.block{color:#0C1C35!important}
+.chip{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:999px;border:1px solid var(--line);font:500 12px "Geist Mono",monospace;color:var(--muted);letter-spacing:.04em}
+.chip.on{border-color:transparent;background:var(--accentSoft);color:var(--accentText)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navIn{display:flex;align-items:center;gap:28px;height:72px}
+.brand{display:flex;align-items:center;gap:12px}
+.word{font-weight:300;font-size:19px;letter-spacing:.3em;margin-right:-.3em;color:var(--ink)}
+.links{display:flex;gap:26px;margin-left:auto;font-size:15px}
+.links a{color:var(--body)!important}
+.links a:hover{color:var(--ink)!important}
+.navR{display:flex;align-items:center;gap:10px}
+.tbtn{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);background:transparent;color:var(--ink);display:grid;place-items:center;cursor:pointer}
+.nav .btn{min-height:44px;padding:0 18px;font-size:14px}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:900px;height:900px;right:-260px;top:-320px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%);pointer-events:none}
+.heroGrid{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center;padding-top:96px;padding-bottom:104px}
+.hero h1{font-size:clamp(40px,4.4vw,64px);line-height:1.02;letter-spacing:-.04em;margin:22px 0 22px}
+.hero h1 em{font-style:normal;color:var(--accentText)}
+.lead{font-size:20px;line-height:1.55;max-width:34ch}
+.ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+
+/* AI-vindu */
+.ai{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 50px 90px -50px var(--shadow);overflow:hidden}
+.aiTop{display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line);background:var(--surface2);flex-wrap:wrap}
+.tab{height:32px;padding:0 12px;border-radius:8px;border:0;background:transparent;color:var(--muted);font:500 13px "Geist",sans-serif;cursor:pointer}
+.tab.on{background:var(--bg);color:var(--ink);box-shadow:0 0 0 1px var(--line)}
+.aiBody{padding:24px 24px 22px;display:flex;flex-direction:column;gap:16px}
+.ask{align-self:flex-end;max-width:86%;background:var(--accentSoft);color:var(--ink);border-radius:14px 14px 4px 14px;padding:12px 16px;font-size:15px}
+.ans{display:flex;gap:12px;align-items:flex-start}
+.ansIc{flex:none;width:32px;height:32px;border-radius:9px;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center}
+.ansTx{font-size:15px;line-height:1.62;color:var(--body);animation:fadeUp .6s ease both}
+.ansTx b{color:var(--ink);font-weight:600;background:linear-gradient(transparent 62%,var(--accentSoft) 62%)}
+.src{display:flex;gap:6px;flex-wrap:wrap;padding-left:44px}
+.src span{font:500 12px "Geist Mono",monospace;padding:4px 9px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.src span.me{color:var(--accentText);border-color:var(--accent)}
+.aiNote{padding:10px 24px 14px;font:500 11px "Geist Mono",monospace;color:var(--faint);letter-spacing:.04em;border-top:1px solid var(--line)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* motorstripe */
+.strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2)}
+.stripIn{display:flex;align-items:center;gap:34px;height:76px;overflow:hidden;white-space:nowrap}
+.stripIn b{font:500 12px "Geist Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.stripIn span{font-size:17px;font-weight:500;color:var(--muted);letter-spacing:-.01em}
+
+section.s{padding:112px 0}
+.s h2{font-size:clamp(32px,3.4vw,48px);line-height:1.06;letter-spacing:-.035em}
+.site .sub{font-size:18px;line-height:1.6;max-width:56ch;margin-top:18px}
+.head{max-width:760px;margin-bottom:56px}
+
+/* skiftet */
+.shift{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pane{border:1px solid var(--line);border-radius:18px;padding:30px;background:var(--surface)}
+.pane h3{font-size:20px;margin:14px 0 20px}
+.serp{display:flex;flex-direction:column;gap:10px}
+.serp i{display:block;height:12px;border-radius:6px;background:var(--line)}
+.serp i.t{height:14px;width:62%;background:color-mix(in srgb,var(--muted) 35%,transparent)}
+.serp .r{display:flex;flex-direction:column;gap:7px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.one{border-radius:14px;padding:22px;background:var(--bg);border:1px solid var(--accent);box-shadow:0 0 0 6px var(--accentSoft)}
+.one p{font-size:16px;line-height:1.6}
+.one b{color:var(--ink)}
+.site .cap{margin-top:22px;font-size:15px;color:var(--muted)}
+
+/* resultater */
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.card{border:1px solid var(--line);border-radius:18px;padding:26px 24px 24px;background:var(--surface);display:flex;flex-direction:column;gap:14px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--accent);transform:translateY(-3px)}
+.card .n{font:500 12px "Geist Mono",monospace;color:var(--faint)}
+.card h3{font-size:21px;line-height:1.2}
+.card p{font-size:15px;line-height:1.58}
+.card .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+
+/* spørsmål */
+.qs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.q{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--surface);display:flex;flex-direction:column;gap:16px}
+.q .qt{font-size:18px;line-height:1.35;color:var(--ink);font-weight:500;letter-spacing:-.015em}
+.q .vs{display:flex;flex-direction:column;gap:6px;font-size:13.5px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.q .vs .a{color:var(--faint);text-decoration:line-through}
+.q .vs .b{color:var(--accentText);font-weight:500}
+
+/* case */
+.caseBox{background:var(--block);border:1px solid var(--blockLine);border-radius:22px;padding:56px;color:var(--blockInk)}
+.caseBox h2{color:var(--blockInk)}
+.caseBox .eye{color:var(--blockAccent)}
+.chain{display:grid;grid-template-columns:repeat(3,1fr) 1.15fr;margin-top:44px;border:1px solid var(--blockLine);border-radius:16px;overflow:hidden}
+.st{position:relative;padding:30px 30px 28px;border-left:1px solid var(--blockLine)}
+.st:first-child{border-left:0}
+.st b{display:block;font:500 clamp(34px,3.3vw,50px)/1 "Geist Mono",monospace;letter-spacing:-.03em;color:var(--blockInk);margin-bottom:12px}
+.st.end b,.st.cost b{color:var(--blockAccent)}
+.st span{font-size:14.5px;color:var(--blockBody)}
+.st.cost{background:color-mix(in srgb,var(--blockInk) 4%,transparent)}
+.st.arr:after{content:"\2192";position:absolute;right:-15px;top:50%;margin-top:-15px;width:30px;height:30px;border-radius:50%;background:var(--block);border:1px solid var(--blockLine);color:var(--blockAccent);font:600 14px/28px "Geist",sans-serif;text-align:center;z-index:2}
+.site .caseNote{margin-top:22px;font-size:14px;color:var(--blockBody)}
+
+/* steg */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.step{padding-top:28px;border-top:2px solid var(--accent);position:relative}
+.step .k{position:absolute;top:-16px;left:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--btnBg);color:var(--btnInk);font:500 12px "Geist Mono",monospace}
+.step h3{font-size:22px;margin:8px 0 12px}
+.step p{font-size:16px;line-height:1.6}
+
+/* tilbud */
+.offer{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:center;border:1px solid var(--line);border-radius:22px;padding:56px;background:var(--surface);position:relative;overflow:hidden}
+.offer:before{content:"";position:absolute;width:600px;height:600px;left:-200px;bottom:-360px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%)}
+.offer > *{position:relative}
+.form{display:flex;flex-direction:column;gap:14px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:24px}
+.form label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted);font-weight:500}
+.form input{height:48px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:0 14px;font:400 16px "Geist",sans-serif}
+.form input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.form .btn{width:100%;margin-top:4px}
+.fine{font-size:13px;color:var(--faint);text-align:center}
+.guar{display:flex;gap:12px;align-items:flex-start;margin-top:26px;padding:16px 18px;border-radius:12px;background:var(--accentSoft)}
+.guar p{font-size:15px;color:var(--ink)}
+
+/* FAQ */
+.faq{max-width:860px}
+.fq{border-bottom:1px solid var(--line)}
+.fq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:0;cursor:pointer;color:var(--ink);font:500 19px "Geist",sans-serif;text-align:left;letter-spacing:-.015em}
+.fq .pl{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--accentText);transition:transform .25s}
+.fq .pl.open{transform:rotate(45deg)}
+.fq .fa{padding:0 50px 24px 0;font-size:16px;line-height:1.65;color:var(--body);animation:fadeUp .35s ease both}
+
+/* slutt */
+.final{text-align:center;padding:120px 0 128px;position:relative;overflow:hidden}
+.final:before{content:"";position:absolute;width:820px;height:820px;left:50%;top:50%;margin:-410px 0 0 -410px;border-radius:50%;border:1px solid var(--line)}
+.final:after{content:"";position:absolute;width:520px;height:520px;left:50%;top:50%;margin:-260px 0 0 -260px;border-radius:50%;border:1px solid var(--line)}
+.final > *{position:relative;z-index:1}
+.final h2{font-size:clamp(34px,4vw,56px);line-height:1.04;letter-spacing:-.04em;max-width:18ch;margin:0 auto}
+.site .final p{font-size:18px;margin:20px auto 34px;max-width:46ch}
+.foot{border-top:1px solid var(--line);padding:34px 0 44px;font-size:14px;color:var(--muted)}
+.footIn{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.foot .word{font-size:13px;color:var(--muted)}
+
+@media (max-width:1080px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .qs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chain{grid-template-columns:repeat(3,1fr)}
+  .st.cost{grid-column:1/-1;border-left:0;border-top:1px solid var(--blockLine)}
+}
+@media (max-width:860px){
+  .wrap{padding:0 20px}
+  .links{display:none}
+  .navIn{gap:12px}.navR{margin-left:auto}
+  .nav .btn{padding:0 14px}
+  .heroGrid,.shift,.offer{grid-template-columns:1fr}
+  .heroGrid{padding-top:48px;padding-bottom:72px;gap:40px}
+  .lead{font-size:18px}
+  section.s{padding:72px 0}
+  .cards,.qs,.steps{grid-template-columns:1fr}
+  .caseBox,.offer{padding:30px 22px}
+  .chain{grid-template-columns:1fr}
+  .st{border-left:0;border-top:1px solid var(--blockLine)}
+  .st:first-child{border-top:0}
+  .st.arr:after{content:"\2193";right:auto;left:30px;top:auto;bottom:-15px;margin:0}
+  .ctaRow .btn{width:100%}
+  .final{padding:80px 0 88px}
+}
+@media (max-width:420px){ .word{display:none} }
+
+.tbtn .moon{display:none}
+.site[data-theme="light"] .tbtn .sun{display:none}
+.site[data-theme="light"] .tbtn .moon{display:block}
+.ans[hidden],.src[hidden],.fa[hidden]{display:none}
+/* GDPR */
+.gdpr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:56px;align-items:start}
+.gdpr .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:26px}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.ck{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--surface);display:flex;flex-direction:column;gap:10px}
+.ck .ic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--accentSoft);color:var(--accentText)}
+.ck h3{font-size:18px;line-height:1.25}
+.ck p{font-size:15px;line-height:1.55}
+@media (max-width:860px){.gdpr,.checks{grid-template-columns:1fr}.gdpr{gap:32px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="site" data-theme="dark" id="site">
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="wrap navIn">
+      <a class="brand" href="#top" aria-label="Virnes">
+        <svg width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><g style="stroke:var(--symLine)" stroke-width="2.4" stroke-linecap="round"><line x1="50" y1="50" x2="72" y2="50"></line><line x1="50" y1="50" x2="61" y2="69.05"></line><line x1="50" y1="50" x2="39" y2="69.05"></line><line x1="50" y1="50" x2="28" y2="50"></line><line x1="50" y1="50" x2="39" y2="30.95"></line><line x1="50" y1="50" x2="61" y2="30.95"></line></g><g style="stroke:var(--symLine)" stroke-width="1.6" stroke-linecap="round" opacity=".55"><line x1="72" y1="50" x2="88.64" y2="39.65"></line><line x1="72" y1="50" x2="88.64" y2="60.35"></line><line x1="61" y1="69.05" x2="78.28" y2="78.28"></line><line x1="61" y1="69.05" x2="60.35" y2="88.64"></line><line x1="39" y1="69.05" x2="39.65" y2="88.64"></line><line x1="39" y1="69.05" x2="21.72" y2="78.28"></line><line x1="28" y1="50" x2="11.36" y2="60.35"></line><line x1="28" y1="50" x2="11.36" y2="39.65"></line><line x1="39" y1="30.95" x2="21.72" y2="21.72"></line><line x1="39" y1="30.95" x2="39.65" y2="11.36"></line><line x1="61" y1="30.95" x2="60.35" y2="11.36"></line><line x1="61" y1="30.95" x2="78.28" y2="21.72"></line></g><g style="fill:var(--symNode)"><circle cx="72" cy="50" r="4.6"></circle><circle cx="61" cy="69.05" r="4.6"></circle><circle cx="39" cy="69.05" r="4.6"></circle><circle cx="28" cy="50" r="4.6"></circle><circle cx="39" cy="30.95" r="4.6"></circle><circle cx="61" cy="30.95" r="4.6"></circle></g><g style="fill:var(--symNode)" opacity=".7"><circle cx="88.64" cy="39.65" r="3"></circle><circle cx="88.64" cy="60.35" r="3"></circle><circle cx="78.28" cy="78.28" r="3"></circle><circle cx="60.35" cy="88.64" r="3"></circle><circle cx="39.65" cy="88.64" r="3"></circle><circle cx="21.72" cy="78.28" r="3"></circle><circle cx="11.36" cy="60.35" r="3"></circle><circle cx="11.36" cy="39.65" r="3"></circle><circle cx="21.72" cy="21.72" r="3"></circle><circle cx="39.65" cy="11.36" r="3"></circle><circle cx="60.35" cy="11.36" r="3"></circle><circle cx="78.28" cy="21.72" r="3"></circle></g><circle cx="50" cy="50" r="8" style="fill:var(--symCore)"></circle></svg>
+        <span class="word">VIRNES</span>
+      </a>
+      <nav class="links" aria-label="Hovedmeny">
+        <a href="#resultat">Hva du får</a>
+        <a href="#case">Resultater</a>
+        <a href="#sjekk">Gratis AI-sjekk</a>
+        <a href="#faq">Spørsmål</a>
+      </nav>
+      <div class="navR">
+        <button class="tbtn" type="button" id="themeBtn" aria-label="Bytt til lyst tema">
+          <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg>
+        </button>
+        <a class="btn" href="#sjekk">Sjekk klinikken din</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap heroGrid">
+      <div>
+        <span class="eye"><span class="dot"></span>For tannklinikker</span>
+        <h1>Pasientene spør AI hvilken tannlege de skal velge. <em>Sørg for at svaret er deg.</em></h1>
+        <p class="lead">Flere nye pasienter hver måned, fra ChatGPT, Google og annonsene, uten at du løfter en finger.</p>
+        <div class="ctaRow">
+          <a class="btn" href="#sjekk">Se hva AI sier om klinikken din →</a>
+          <a class="btn ghost" href="#case">Se resultatene</a>
+        </div>
+        <div class="trust">
+          <span class="chip on">AEO</span><span class="chip on">GEO</span><span class="chip">SEO</span><span class="chip">Google Ads</span><span class="chip">Lokal synlighet</span>
+        </div>
+      </div>
+
+      <div class="ai" aria-label="Eksempel på et AI-svar">
+        <div class="aiTop">
+          <button type="button" class="tab on" data-eng="0" aria-pressed="true">ChatGPT</button>
+          <button type="button" class="tab" data-eng="1" aria-pressed="false">Google AI</button>
+          <button type="button" class="tab" data-eng="2" aria-pressed="false">Gemini</button>
+          <button type="button" class="tab" data-eng="3" aria-pressed="false">Perplexity</button>
+        </div>
+        <div class="aiBody">
+          <div class="ask">Hvilken tannklinikk i Drammen er best på implantater?</div>
+          
+            <div class="ans" data-ans="0"><span class="ansIc"><span class="dot"></span></span><p class="ansTx">For implantater i Drammen er det <b>Din Klinikk</b> som oftest anbefales. Pasienter trekker frem gratis første konsultasjon, tydelige priser og at de også tilbyr helkjeve (All-on-4).</p></div>
+            <div class="src" data-ans="0"><span class="me">dinklinikk.no</span><span>Google-omtaler</span><span>legelisten.no</span></div>
+          
+          
+            <div class="ans" data-ans="1" hidden><span class="ansIc"><span class="dot"></span></span><p class="ansTx"><strong style="color:var(--ink)">AI-oversikt:</strong> Flere klinikker i Drammen tilbyr implantater. <b>Din Klinikk</b> har best vurdering og en egen side med priser for implantat og helkjeve.</p></div>
+            <div class="src" data-ans="1" hidden><span class="me">dinklinikk.no/implantat</span><span>Google Maps</span></div>
+          
+          
+            <div class="ans" data-ans="2" hidden><span class="ansIc"><span class="dot"></span></span><p class="ansTx">Et trygt valg er <b>Din Klinikk</b> i Drammen sentrum. De er kjent for implantatbehandling, gratis første konsultasjon og god oppfølging etterpå.</p></div>
+            <div class="src" data-ans="2" hidden><span class="me">dinklinikk.no</span><span>Google-omtaler</span></div>
+          
+          
+            <div class="ans" data-ans="3" hidden><span class="ansIc"><span class="dot"></span></span><p class="ansTx"><b>Din Klinikk</b> [1] er den mest omtalte implantatklinikken i Drammen, med mange gode omtaler fra pasienter [2]. Første konsultasjon er gratis.</p></div>
+            <div class="src" data-ans="3" hidden><span class="me">[1] dinklinikk.no</span><span>[2] Google-omtaler</span></div>
+          
+        </div>
+        <div class="aiNote">ILLUSTRASJON · SLIK SKAL SVARET SE UT FOR DEG</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOTORER -->
+  <div class="strip">
+    <div class="wrap stripIn">
+      <b>Synlig der pasientene spør</b>
+      <span>ChatGPT</span><span>Google AI-oversikt</span><span>Gemini</span><span>Perplexity</span><span>Copilot</span><span>Google Maps</span><span>Google-søk</span>
+    </div>
+  </div>
+
+  <!-- SKIFTET -->
+  <section class="s">
+    <div class="wrap">
+      <div class="head">
+        <span class="eye">Søket har flyttet seg</span>
+        <h2 style="margin-top:18px">Før fikk pasienten ti lenker. Nå får de ett svar.</h2>
+      </div>
+      <div class="shift">
+        <div class="pane">
+          <span class="chip">Google før</span>
+          <h3>Du kunne være nummer fire og fortsatt få pasienten.</h3>
+          <div class="serp" aria-hidden="true">
+            <div class="r"><i class="t"></i><i style="width:92%"></i><i style="width:70%"></i></div>
+            <div class="r"><i class="t" style="width:48%"></i><i style="width:88%"></i><i style="width:64%"></i></div>
+            <div class="r"><i class="t" style="width:56%"></i><i style="width:80%"></i><i style="width:58%"></i></div>
+            <div class="r" style="border-bottom:0"><i class="t" style="width:40%"></i><i style="width:76%"></i></div>
+          </div>
+        </div>
+        <div class="pane">
+          <span class="chip on">AI nå</span>
+          <h3>Det er plass til én klinikk i svaret. Resten finnes ikke.</h3>
+          <div class="one"><p>«Jeg anbefaler <b>Din Klinikk</b>. De har gratis konsultasjon og mange fornøyde implantatpasienter.»</p></div>
+          <p class="cap">Blir konkurrenten nevnt i stedet for deg, går pasienten dit, uten at du noen gang fikk vite det.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HVA DU FÅR -->
+  <section class="s" id="resultat" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eye">Hva du sitter igjen med</span>
+        <h2 style="margin-top:18px">Én partner for alt som gir nye pasienter.</h2>
+        <p class="sub">Du trenger ikke forstå forkortelsene. Du skal bare merke at kalenderen fylles.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><span class="n">01</span><h3>Anbefalt av AI</h3><p>Klinikken nevnes når pasienter spør ChatGPT, Gemini og Google om behandlingene dere tjener mest på.</p><div class="tags"><span class="chip on">AEO</span><span class="chip on">GEO</span></div></div>
+        <div class="card"><span class="n">02</span><h3>Øverst på Google</h3><p>Når de søker selv, finner de dere først, både i kartet og i søkeresultatene.</p><div class="tags"><span class="chip">SEO</span><span class="chip">Lokal SEO</span></div></div>
+        <div class="card"><span class="n">03</span><h3>Pasienter fra første uke</h3><p>Annonser som fyller kalenderen mens den organiske synligheten bygges opp.</p><div class="tags"><span class="chip">Google Ads</span><span class="chip">Meta</span></div></div>
+        <div class="card"><span class="n">04</span><h3>Du ser hva det gir</h3><p>Hver måned: hvor ofte AI anbefaler dere, hvor mange som tok kontakt og hva det ble til.</p><div class="tags"><span class="chip">Rapport</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPØRSMÅLENE -->
+  <section class="s" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="head">
+        <span class="eye">Spørsmålene som avgjør</span>
+        <h2 style="margin-top:18px">Hver dag spør pasienter i byen din om dette. Hvem får dem?</h2>
+      </div>
+      <div class="qs">
+        <div class="q"><span class="chip">Implantat</span><p class="qt">«Hva koster tannimplantat i Bergen, og hvor er det best?»</p><div class="vs"><span class="a">I dag: en konkurrent</span><span class="b">Målet: din klinikk</span></div></div>
+        <div class="q"><span class="chip">Tannlegeskrekk</span><p class="qt">«Hvilken tannlege i Oslo er flink med folk som er redde?»</p><div class="vs"><span class="a">I dag: en konkurrent</span><span class="b">Målet: din klinikk</span></div></div>
+        <div class="q"><span class="chip">Tannregulering</span><p class="qt">«Hvem tilbyr usynlig tannregulering i Stavanger?»</p><div class="vs"><span class="a">I dag: en konkurrent</span><span class="b">Målet: din klinikk</span></div></div>
+        <div class="q"><span class="chip">Akutt</span><p class="qt">«Akutt tannlege som har åpent nå i Trondheim»</p><div class="vs"><span class="a">I dag: en konkurrent</span><span class="b">Målet: din klinikk</span></div></div>
+        <div class="q"><span class="chip">Helkjeve</span><p class="qt">«Er All-on-4 verdt pengene? Hvor bør jeg ta det?»</p><div class="vs"><span class="a">I dag: en konkurrent</span><span class="b">Målet: din klinikk</span></div></div>
+        <div class="q"><span class="chip">Helfo</span><p class="qt">«Tannklinikk nær meg som hjelper med Helfo-refusjon»</p><div class="vs"><span class="a">I dag: en konkurrent</span><span class="b">Målet: din klinikk</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE -->
+  <section class="s" id="case">
+    <div class="wrap">
+      <div class="caseBox">
+        <span class="eye">Tannklinikk på Østlandet · én måned</span>
+        <h2 style="margin-top:18px;max-width:20ch">Femten nye implantatpasienter på én måned.</h2>
+        <div class="chain">
+          <div class="st arr"><b>81</b><span>Tok kontakt</span></div>
+          <div class="st arr"><b>63</b><span>Booket konsultasjon</span></div>
+          <div class="st end"><b>15+</b><span>Ble implantatpasienter</span></div>
+          <div class="st cost"><b>&lt; 700 kr</b><span>Annonsekost per implantatpasient</span></div>
+        </div>
+        <p class="caseNote">Én klinikk, én måned med annonser. Et eksempel, ikke et løfte.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GDPR -->
+  <section class="s" id="gdpr" style="padding-top:0">
+    <div class="wrap gdpr">
+      <div>
+        <span class="eye">Personvern og GDPR</span>
+        <h2 style="margin-top:18px">Mer synlighet, uten at personvernet blir det svake leddet.</h2>
+        <p class="sub">Tannklinikker behandler helseopplysninger. Vi setter opp markedsføringen riktig fra dag én, og rydder i det som ikke er det. Så slipper du å tenke på det.</p>
+        <div class="tags"><span class="chip on">GDPR</span><span class="chip">Consent Mode v2</span><span class="chip">EU-lagring</span><span class="chip">Databehandleravtaler</span></div>
+      </div>
+      <div class="checks">
+        <div class="ck"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h3>Samtykke før sporing</h3><p>Cookie-banner og samtykke satt opp riktig, så annonsene måles uten at dere bryter reglene.</p></div>
+        <div class="ck"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h3>Data lagret i Europa</h3><p>Henvendelser fra pasienter lagres i EU/EØS, ikke spredt rundt i ukjente verktøy.</p></div>
+        <div class="ck"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h3>Ingen helsedata på avveie</h3><p>Skjemaene sender aldri helseopplysninger videre til Google, Meta eller AI-verktøy.</p></div>
+        <div class="ck"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><h3>Papirene i orden</h3><p>Databehandleravtaler og en personvernerklæring som faktisk stemmer med det nettsiden gjør.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIK FUNKER DET -->
+  <section class="s" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eye">Slik funker det</span>
+        <h2 style="margin-top:18px">Tre steg. Du gjør nesten ingenting.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="k">01</span><h3>Gratis AI-sjekk</h3><p>Vi spør AI om klinikken din og viser deg svaret, og hvem som får pasientene i dag.</p></div>
+        <div class="step"><span class="k">02</span><h3>Vi gjør deg til svaret</h3><p>Nettside, innhold, omtaler og annonser. Alt settes opp for deg.</p></div>
+        <div class="step"><span class="k">03</span><h3>Pasientene kommer</h3><p>Du ser hver måned hvor ofte dere anbefales og hvor mange som booker.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TILBUD / AI-SJEKK -->
+  <section class="s" id="sjekk" style="padding-top:0">
+    <div class="wrap">
+      <div class="offer">
+        <div>
+          <span class="eye">Gratis AI-sjekk</span>
+          <h2 style="margin-top:18px">Se hva ChatGPT sier om klinikken din, før pasientene gjør det.</h2>
+          <p class="sub">Vi spør ChatGPT, Gemini og Google om behandlingene dere tilbyr i byen deres, og viser deg hvem som blir anbefalt. Svaret er ditt uansett.</p>
+          <div class="guar"><span class="dot" style="margin-top:7px;flex:none"></span><p>Starter du med oss og ikke er fornøyd etter første måned, betaler du oss ingenting.</p></div>
+        </div>
+        <form class="form" id="sjekkForm">
+          <label>Klinikkens navn<input type="text" name="klinikk" required autocomplete="organization" placeholder="F.eks. Smil Tannklinikk"></label>
+          <label>By<input type="text" name="by" required autocomplete="address-level2" placeholder="F.eks. Drammen"></label>
+          <label>E-post<input type="email" name="epost" required autocomplete="email" placeholder="navn@klinikk.no"></label>
+          <button class="btn" type="submit">Send meg AI-sjekken →</button>
+          <span class="fine">Svar innen 48 timer. Ingen binding.</span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="s" id="faq" style="padding-top:0">
+    <div class="wrap">
+      <div class="head"><span class="eye">Spørsmål</span><h2 style="margin-top:18px">Det klinikker lurer på.</h2></div>
+      <div class="faq">
+        <div class="fq"><button type="button" data-fq="0" aria-expanded="false" aria-controls="fa0">Hva er AEO og GEO?<span class="pl">+</span></button>
+          <p class="fa" id="fa0" hidden>Det er SEO for AI. AEO og GEO handler om å bli nevnt og anbefalt når noen spør ChatGPT, Gemini eller Google AI, ikke bare å ligge høyt i en liste med lenker.</p></div>
+        <div class="fq"><button type="button" data-fq="1" aria-expanded="false" aria-controls="fa1">Erstatter dette Google?<span class="pl">+</span></button>
+          <p class="fa" id="fa1" hidden>Nei. Mange pasienter søker fortsatt på Google. Derfor jobber vi med begge: synlig i AI-svarene og øverst når de søker selv.</p></div>
+        <div class="fq"><button type="button" data-fq="2" aria-expanded="false" aria-controls="fa2">Hvor lang tid tar det?<span class="pl">+</span></button>
+          <p class="fa" id="fa2" hidden>Annonsene gir pasienter fra første uke. Synligheten i AI og Google bygges over noen måneder, og du ser utviklingen i rapporten hver måned.</p></div>
+        <div class="fq"><button type="button" data-fq="3" aria-expanded="false" aria-controls="fa3">Må vi gjøre noe selv?<span class="pl">+</span></button>
+          <p class="fa" id="fa3" hidden>Nesten ingenting. Vi trenger tilgang til nettsiden og Google-profilen, og noen svar fra dere om behandlinger og priser. Resten gjør vi.</p></div>
+        <div class="fq"><button type="button" data-fq="4" aria-expanded="false" aria-controls="fa4">Vi har allerede et byrå. Hva nå?<span class="pl">+</span></button>
+          <p class="fa" id="fa4" hidden>Ta AI-sjekken uansett. Den viser om klinikken blir anbefalt i dag. Gjør den det, er alt bra. Gjør den det ikke, vet du hva som mangler.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLUTT -->
+  <section class="final">
+    <div class="wrap">
+      <span class="eye">Ta testen selv</span>
+      <h2 style="margin-top:20px">Spør ChatGPT om beste tannlege i byen din. Er det deg?</h2>
+      <p>Hvis ikke, vet vi hvordan du blir det.</p>
+      <a class="btn" href="#sjekk">Få gratis AI-sjekk →</a>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap footIn">
+      <span style="display:flex;align-items:center;gap:10px"><span class="word">VIRNES</span><span>Questa Scale AS · org.nr. 930 208 469</span></span>
+      <span>thomas@questascale.com</span>
+      <a href="/personvern.html" id="pvLink" style="color:var(--muted)">Personvern</a>
+    </div>
+  </footer>
+</div>
+<script>
+(function(){
+  var site=document.getElementById('site'), btn=document.getElementById('themeBtn'), meta=document.querySelector('meta[name="theme-color"]'), pv=document.getElementById('pvLink');
+  function setTheme(t){
+    site.setAttribute('data-theme',t); var l=t==='light';
+    btn.setAttribute('aria-label', l?'Bytt til mørkt tema':'Bytt til lyst tema');
+    if(meta) meta.setAttribute('content', l?'#FFFFFF':'#12161B');
+    if(pv) pv.setAttribute('href','/personvern.html'+(l?'?tema=lys':''));
+  }
+  setTheme(/[?&]tema=lys\b/.test(location.search)?'light':'dark');
+  btn.addEventListener('click',function(){ setTheme(site.getAttribute('data-theme')==='light'?'dark':'light'); });
+
+  // AI-fanene
+  var tabs=[].slice.call(document.querySelectorAll('[data-eng]'));
+  tabs.forEach(function(t){ t.addEventListener('click',function(){
+    var i=t.getAttribute('data-eng');
+    tabs.forEach(function(x){ var on=x===t; x.classList.toggle('on',on); x.setAttribute('aria-pressed',on?'true':'false'); });
+    [].forEach.call(document.querySelectorAll('[data-ans]'),function(a){ a.hidden = a.getAttribute('data-ans')!==i; });
+  }); });
+
+  // Spørsmål og svar
+  var qs=[].slice.call(document.querySelectorAll('[data-fq]'));
+  qs.forEach(function(b){ b.addEventListener('click',function(){
+    var open=b.getAttribute('aria-expanded')!=='true';
+    qs.forEach(function(x){ x.setAttribute('aria-expanded','false'); x.querySelector('.pl').classList.remove('open'); document.getElementById('fa'+x.getAttribute('data-fq')).hidden=true; });
+    if(open){ b.setAttribute('aria-expanded','true'); b.querySelector('.pl').classList.add('open'); document.getElementById('fa'+b.getAttribute('data-fq')).hidden=false; }
+  }); });
+
+  // AI-sjekk: åpner e-post med feltene ferdig utfylt (ingenting lagres på siden)
+  var f=document.getElementById('sjekkForm');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var k=f.klinikk.value.trim(), by=f.by.value.trim(), ep=f.epost.value.trim();
+    var txt='Klinikk: '+k+'\nBy: '+by+'\nE-post: '+ep+'\n';
+    location.href='mailto:thomas@questascale.com?subject='+encodeURIComponent('Gratis AI-sjekk: '+k)+'&body='+encodeURIComponent(txt);
+  });
+})();
+</script>
+</body>
+</html>

@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Personvernerklæring — Virnes</title>
-<meta name="theme-color" content="#12161B">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2312161B'/%3E%3Cg stroke='%235FE3DA' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M50 50L74 50M50 50L62 70.8M50 50L38 70.8M50 50L26 50M50 50L38 29.2M50 50L62 29.2'/%3E%3C/g%3E%3Cg fill='%235FE3DA'%3E%3Ccircle cx='74' cy='50' r='7'/%3E%3Ccircle cx='62' cy='70.8' r='7'/%3E%3Ccircle cx='38' cy='70.8' r='7'/%3E%3Ccircle cx='26' cy='50' r='7'/%3E%3Ccircle cx='38' cy='29.2' r='7'/%3E%3Ccircle cx='62' cy='29.2' r='7'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='10' fill='%23E9EEF2'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#F7F5F0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232B3034'/%3E%3Cg stroke='%238EC5BE' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M50 50L74 50M50 50L62 70.8M50 50L38 70.8M50 50L26 50M50 50L38 29.2M50 50L62 29.2'/%3E%3C/g%3E%3Cg fill='%238EC5BE'%3E%3Ccircle cx='74' cy='50' r='7'/%3E%3Ccircle cx='62' cy='70.8' r='7'/%3E%3Ccircle cx='38' cy='70.8' r='7'/%3E%3Ccircle cx='26' cy='50' r='7'/%3E%3Ccircle cx='38' cy='29.2' r='7'/%3E%3Ccircle cx='62' cy='29.2' r='7'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='10' fill='%23F7F5F0'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap">
-<script>if(/[?&]tema=lys\b/.test(location.search))document.documentElement.setAttribute("data-theme","light");</script>
+<script>if(/[?&]tema=mork\b/.test(location.search))document.documentElement.setAttribute("data-theme","dark");</script>
 <style>
-:root{--bg:#12161B;--bg2:#0E1216;--surface:#181D23;--line:#262D36;--ink:#E9EEF2;--body:#AAB4BF;--muted:#8C97A4;
-  --accent:#5FE3DA;--accentText:#5FE3DA;--symLine:#5FE3DA;--symNode:#5FE3DA;--symCore:#E9EEF2;color-scheme:dark}
-[data-theme="light"]{--bg:#FFFFFF;--bg2:#F5F7FA;--surface:#F5F7FA;--line:#E1E6EE;--ink:#0C1C35;--body:#4A5B74;--muted:#56667E;
-  --accent:#C8733F;--accentText:#A85A2A;--symLine:#0C1C35;--symNode:#0C1C35;--symCore:#C8733F;color-scheme:light}
+:root{--bg:#F7F5F0;--bg2:#EDE9E1;--surface:#FFFFFF;--line:#E2DDD3;--ink:#1D1E20;--body:#55585C;--muted:#6E7175;
+  --accent:#6FAFA7;--accentText:#2B3034;--symLine:#2B3034;--symNode:#2B3034;--symCore:#8EC5BE;color-scheme:light}
+[data-theme="dark"]{--bg:#1A1D1F;--bg2:#151719;--surface:#212528;--line:#2E3337;--ink:#F2F1EC;--body:#B3B7BA;--muted:#979CA0;
+  --accent:#8EC5BE;--accentText:#8EC5BE;--symLine:#8EC5BE;--symNode:#8EC5BE;--symCore:#F2F1EC;color-scheme:dark}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--body);
@@ -130,9 +130,9 @@ footer a:hover{color:var(--ink)}
 </footer>
 
 <script>
-if(document.documentElement.getAttribute("data-theme")==="light"){
-  [].forEach.call(document.querySelectorAll("[data-keep-theme]"),function(a){a.setAttribute("href","/?tema=lys")});
-  var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#FFFFFF");
+if(document.documentElement.getAttribute("data-theme")==="dark"){
+  [].forEach.call(document.querySelectorAll("[data-keep-theme]"),function(a){a.setAttribute("href","/?tema=mork")});
+  var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute("content","#1A1D1F");
 }
 </script>
 </body>
