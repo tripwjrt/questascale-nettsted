@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="nb" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virnes — flere implantatpasienter til tannklinikken</title>
+<meta name="description" content="Nye implantatpasienter hver måned. Vi henter dem inn. Du behandler dem.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://virnes.com/">
+<meta property="og:site_name" content="Virnes">
+<meta property="og:locale" content="nb_NO">
+<meta property="og:title" content="Virnes — flere implantatpasienter til tannklinikken">
+<meta property="og:description" content="Nye implantatpasienter hver måned. Vi henter dem inn. Du behandler dem.">
+<meta property="og:image" content="https://virnes.com/arkiv/implantat-2026/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Virnes – Nye implantatpasienter hver måned.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://virnes.com/arkiv/implantat-2026/og-image.jpg">
+<meta name="theme-color" content="#12161B">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2312161B'/%3E%3Cg stroke='%235FE3DA' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M50 50L74 50M50 50L62 70.8M50 50L38 70.8M50 50L26 50M50 50L38 29.2M50 50L62 29.2'/%3E%3C/g%3E%3Cg fill='%235FE3DA'%3E%3Ccircle cx='74' cy='50' r='7'/%3E%3Ccircle cx='62' cy='70.8' r='7'/%3E%3Ccircle cx='38' cy='70.8' r='7'/%3E%3Ccircle cx='26' cy='50' r='7'/%3E%3Ccircle cx='38' cy='29.2' r='7'/%3E%3Ccircle cx='62' cy='29.2' r='7'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='10' fill='%23E9EEF2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<script>
+document.documentElement.className+=" js";
+if(/[?&]tema=lys\b/.test(location.search))document.documentElement.setAttribute("data-theme","light");
+</script>
+<style>
+/* ---------- tema: grafitt og cyan (mørkt, standard) ---------- */
+:root{
+  --bg:#12161B; --bg2:#0E1216; --surface:#181D23; --surface2:#1D232A; --line:#262D36;
+  --ink:#E9EEF2; --body:#AAB4BF; --muted:#8C97A4; --faint:#6E7987;
+  --accent:#5FE3DA; --accentText:#5FE3DA; --accent2:#9BF0EA;
+  --btnBg:#5FE3DA; --btnInk:#0B1014; --btnShadow:rgba(95,227,218,.45);
+  --block:#0B0E12; --blockInk:#E9EEF2; --blockBody:#AAB4BF; --blockAccent:#5FE3DA; --blockLine:rgba(233,238,242,.09);
+  --blockBtnBg:#5FE3DA; --blockBtnInk:#0B1014;
+  --symLine:#5FE3DA; --symNode:#5FE3DA; --symCore:#E9EEF2;
+  --topbar:rgba(18,22,27,.86); --topShadow:rgba(0,0,0,.55);
+  --glowA:rgba(95,227,218,.12); --glowB:rgba(95,227,218,.06); --dots:rgba(95,227,218,.13); --follow:rgba(95,227,218,.10);
+  --calBg:#181D23; --calTop:#14181D; --calLine:rgba(233,238,242,.07); --calInk:#E9EEF2; --calMuted:#8C97A4; --calTime:#6E7987;
+  --impA:#5FE3DA; --impB:#9BF0EA; --impInk:#0B1014; --impGlow:rgba(95,227,218,.6);
+  --panelOn:#1D232A; --panelOff:#161A20; --panelOnLine:rgba(95,227,218,.35);
+  --cardBg:rgba(24,29,35,.96); --shadow:rgba(0,0,0,.55);
+  --pad:80px;
+  --ease:cubic-bezier(.16,1,.3,1);
+  color-scheme:dark;
+}
+/* ---------- tema: papir, natt og kobber (lyst) ---------- */
+[data-theme="light"]{
+  --bg:#FFFFFF; --bg2:#F5F7FA; --surface:#FFFFFF; --surface2:#F5F7FA; --line:#E1E6EE;
+  --ink:#0C1C35; --body:#4A5B74; --muted:#56667E; --faint:#7A889C;
+  --accent:#C8733F; --accentText:#A85A2A; --accent2:#E2A275;
+  --btnBg:#0C1C35; --btnInk:#FFFFFF; --btnShadow:rgba(12,28,53,.45);
+  --block:#0C1C35; --blockInk:#F4F7FB; --blockBody:#B9C6D6; --blockAccent:#E2A275; --blockLine:rgba(255,255,255,.1);
+  --blockBtnBg:#E2A275; --blockBtnInk:#0C1C35;
+  --symLine:#0C1C35; --symNode:#0C1C35; --symCore:#C8733F;
+  --topbar:rgba(255,255,255,.9); --topShadow:rgba(12,28,53,.25);
+  --glowA:rgba(226,162,117,.22); --glowB:rgba(12,28,53,.07); --dots:rgba(12,28,53,.12); --follow:rgba(226,162,117,.22);
+  --calBg:#0C1C35; --calTop:#081429; --calLine:rgba(255,255,255,.07); --calInk:#FFFFFF; --calMuted:#9FB0C9; --calTime:#7F93AE;
+  --impA:#E2A275; --impB:#F2C29C; --impInk:#0C1C35; --impGlow:rgba(226,162,117,.7);
+  --panelOn:#0C1C35; --panelOff:#18294A; --panelOnLine:#0C1C35;
+  --cardBg:rgba(255,255,255,.97); --shadow:rgba(12,28,53,.45);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Geist","Segoe UI",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden;transition:background .4s,color .4s}
+h1,h2,h3{font-family:"Geist",system-ui,sans-serif;margin:0;
+  font-weight:500;letter-spacing:-.03em;text-wrap:balance;color:var(--ink)}
+p{margin:0;text-wrap:pretty;color:var(--body)}
+a{color:var(--accentText);text-decoration:none}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:"Geist Mono",monospace;font-size:12px;font-weight:500;
+  letter-spacing:.16em;color:var(--accentText);text-transform:uppercase}
+
+/* ---------- logo ---------- */
+.brand{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.brand .sym{flex:none;display:block}
+.brand .word{font-family:"Geist",sans-serif;font-weight:300;font-size:19px;line-height:1;letter-spacing:.3em;margin-right:-.3em;color:var(--ink)}
+.brand .sym .core{transform-box:fill-box;transform-origin:center;animation:corePulse 5s var(--ease) 1s infinite}
+@keyframes corePulse{0%,84%,100%{transform:scale(1)} 90%{transform:scale(1.45)}}
+
+/* ---------- knapper ---------- */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--btnBg);
+  color:var(--btnInk);font-weight:600;padding:17px 30px;font-size:16px;min-height:54px;border-radius:10px;
+  border:0;cursor:pointer;overflow:hidden;isolation:isolate;
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),background .2s}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);
+  transform:translateX(-120%);transition:transform .8s var(--ease)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -12px var(--btnShadow);color:var(--btnInk)}
+.btn:hover::before{transform:translateX(120%)}
+.btn .arr{display:inline-block;transition:transform .35s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+
+.themeBtn{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:10px;border:1px solid var(--line);
+  background:transparent;color:var(--ink);cursor:pointer;transition:border-color .2s,background .2s}
+.themeBtn:hover{border-color:var(--accent)}
+.themeBtn svg{width:18px;height:18px}
+.themeBtn .moon{display:none}
+[data-theme="light"] .themeBtn .sun{display:none}
+[data-theme="light"] .themeBtn .moon{display:block}
+
+section{padding:112px 0;position:relative}
+section h2{font-size:clamp(29px,3.2vw,42px);line-height:1.12}
+.mistbg{background:var(--bg2)}
+
+/* ---------- innglidning ---------- */
+.js .reveal{opacity:0;transform:translateY(22px);
+  transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+.js .stagger>.reveal:nth-child(2){transition-delay:110ms}
+.js .stagger>.reveal:nth-child(3){transition-delay:220ms}
+
+/* ---------- lesefremdrift ---------- */
+.progress{position:fixed;top:0;left:0;height:2px;width:100%;z-index:60;background:var(--accent);
+  transform-origin:0 50%;transform:scaleX(0)}
+
+/* ---------- topp ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:var(--topbar);border-bottom:1px solid var(--line);
+  backdrop-filter:saturate(140%) blur(12px);-webkit-backdrop-filter:saturate(140%) blur(12px);
+  transition:box-shadow .3s,background .4s}
+.topbar.scrolled{box-shadow:0 10px 30px -18px var(--topShadow)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px 0;transition:padding .3s var(--ease)}
+.topbar.scrolled .nav{padding:11px 0}
+.navR{display:flex;align-items:center;gap:12px}
+.nav .btn{padding:12px 22px;font-size:14px;min-height:44px}
+
+/* ---------- hero ---------- */
+.heroSec{position:relative;overflow:hidden;--mx:50%;--my:40%}
+.heroBg{position:absolute;inset:0;pointer-events:none}
+.heroBg .dots{position:absolute;inset:0;
+  background-image:radial-gradient(var(--dots) 1px,transparent 1.4px);background-size:26px 26px;
+  -webkit-mask-image:radial-gradient(ellipse 60% 70% at 50% 45%,#000 20%,transparent 75%);
+          mask-image:radial-gradient(ellipse 60% 70% at 50% 45%,#000 20%,transparent 75%)}
+.heroBg .follow{position:absolute;inset:0;background:radial-gradient(420px circle at var(--mx) var(--my),var(--follow),transparent 70%);transition:opacity .4s}
+.blob{position:absolute;border-radius:50%;filter:blur(80px)}
+.blob.a{width:520px;height:520px;left:-140px;top:-160px;background:var(--glowA);animation:drift1 22s ease-in-out infinite alternate}
+.blob.b{width:460px;height:460px;right:-120px;bottom:-200px;background:var(--glowB);animation:drift2 26s ease-in-out infinite alternate}
+@keyframes drift1{to{transform:translate(120px,90px) scale(1.12)}}
+@keyframes drift2{to{transform:translate(-110px,-70px) scale(1.08)}}
+.floatDia{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--accent);opacity:0;animation:floaty 9s ease-in-out infinite}
+.floatDia.d1{left:46%;top:12%;animation-delay:.4s}
+.floatDia.d2{right:16%;top:22%;width:7px;height:7px;animation-delay:2.6s}
+.floatDia.d3{right:22%;bottom:22%;width:6px;height:6px;animation-delay:5s}
+@keyframes floaty{0%{opacity:0;transform:translateY(14px)}20%,70%{opacity:.7}100%{opacity:0;transform:translateY(-30px)}}
+
+.hero{position:relative;text-align:center;max-width:820px;margin:0 auto;padding:124px 0 120px}
+.hero h1{font-size:clamp(36px,4.6vw,60px);line-height:1.05;margin:24px auto 26px;max-width:24ch;text-wrap:pretty}
+.hl{position:relative;display:inline-block;white-space:nowrap}
+.hl svg{position:absolute;left:-2%;bottom:-.16em;width:104%;height:.32em;overflow:visible}
+.hl path{fill:none;stroke:var(--accent);stroke-width:5;stroke-linecap:round;stroke-dasharray:320;stroke-dashoffset:320}
+.js .hero .in .hl path{animation:draw 1.1s var(--ease) .55s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+html:not(.js) .hl path{stroke-dashoffset:0}
+.hero p.lead{font-size:21px;line-height:1.5;margin:0 auto 42px;max-width:38ch}
+.pulse{position:relative;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--accent);animation:ping 2.2s var(--ease) infinite}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+
+/* ---------- tilbud ---------- */
+.offer{position:relative;overflow:hidden;background:var(--block);color:var(--blockInk);padding:112px 0 116px;text-align:center;
+  border-top:1px solid var(--blockLine);border-bottom:1px solid var(--blockLine)}
+.offer .glow{position:absolute;width:900px;height:900px;left:50%;top:50%;margin:-450px 0 0 -450px;border-radius:50%;
+  background:radial-gradient(circle,color-mix(in srgb,var(--blockAccent) 18%,transparent),transparent 60%);animation:breathe 9s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(.85);opacity:.7}50%{transform:scale(1.1);opacity:1}}
+.offer .bigDia{position:absolute;width:520px;height:520px;border-radius:50%;border:1px solid color-mix(in srgb,var(--blockAccent) 16%,transparent);
+  left:50%;top:50%;margin:-260px 0 0 -260px;animation:ringBreathe 9s ease-in-out infinite}
+.offer .bigDia.two{width:780px;height:780px;margin:-390px 0 0 -390px;border-color:color-mix(in srgb,var(--blockAccent) 8%,transparent);animation-delay:-4.5s}
+@keyframes ringBreathe{0%,100%{transform:scale(.94)}50%{transform:scale(1.04)}}
+.offer .wrap{position:relative}
+.offer .eyebrow{color:var(--blockAccent)}
+.offer h2{font-size:clamp(31px,3.8vw,52px);line-height:1.08;color:var(--blockInk);margin:22px auto 28px;max-width:20ch}
+.offer p{font-size:19px;line-height:1.6;color:var(--blockBody);margin:0 auto;max-width:56ch}
+.offer .hi{color:var(--blockAccent)}
+.offerCta{margin-top:40px}
+.btn.light{background:var(--blockBtnBg);color:var(--blockBtnInk)}
+.btn.light:hover{color:var(--blockBtnInk);box-shadow:0 16px 36px -12px color-mix(in srgb,var(--blockBtnBg) 60%,transparent)}
+
+/* ---------- fra tilfeldig til forutsigbart ---------- */
+.two{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.panel{position:relative;padding:40px 40px 34px;border-radius:16px;border:1px solid var(--panelOff);background:var(--panelOff);
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .3s}
+.panel.on{background:var(--panelOn);border-color:var(--panelOnLine);box-shadow:0 36px 70px -40px var(--shadow)}
+.panel.on:hover{transform:translateY(-4px)}
+.panel h3{font-size:25px;line-height:1.2;margin:18px 0 14px;color:var(--blockInk)}
+.panel p{font-size:16.5px;line-height:1.62;color:var(--blockBody)}
+.panel .eyebrow{color:var(--blockAccent)}
+.panel.off h3{color:color-mix(in srgb,var(--blockInk) 62%,transparent)}
+.panel.off p{color:color-mix(in srgb,var(--blockBody) 80%,transparent)}
+.panel.off .eyebrow{color:color-mix(in srgb,var(--blockBody) 75%,transparent)}
+.chart{margin-top:34px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px;align-items:end;height:120px}
+.chart .col{display:flex;flex-direction:column;align-items:center;gap:8px;height:100%;justify-content:flex-end}
+.chart .bar{width:100%;max-width:26px;height:0;border-radius:3px 3px 0 0;background:rgba(255,255,255,.18);
+  transition:height 1s var(--ease)}
+.chart .bar.zero{height:3px!important;background:rgba(255,255,255,.09)}
+.panel.on .bar{background:linear-gradient(to top,var(--impA),var(--impB))}
+.chart .m{font:500 10.5px "Geist Mono",monospace;color:color-mix(in srgb,var(--blockBody) 60%,transparent);letter-spacing:.04em}
+.panel.on .chart .m{color:var(--blockBody)}
+.chart .col.hot .m{color:var(--blockInk)}
+
+/* ---------- steg ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:56px;position:relative}
+.step{position:relative;padding-top:30px}
+.step::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--line)}
+.step::after{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent);
+  transform:scaleX(0);transform-origin:0 50%;transition:transform 1s var(--ease)}
+.step.in::after{transform:scaleX(1)}
+.step:nth-child(2)::after{transition-delay:.35s}
+.step:nth-child(3)::after{transition-delay:.7s}
+.step .num{position:absolute;top:-15px;left:0;width:30px;height:30px;border-radius:50%;
+  display:grid;place-items:center;background:var(--bg2);border:2px solid var(--line);
+  font:500 11.5px "Geist Mono",monospace;color:var(--muted);transition:all .5s var(--ease);z-index:1}
+.step.in .num{background:var(--btnBg);border-color:var(--btnBg);color:var(--btnInk)}
+.step:nth-child(2) .num{transition-delay:.35s}
+.step:nth-child(3) .num{transition-delay:.7s}
+.step h3{font-size:23px;margin:10px 0 13px}
+.step p{font-size:16px;line-height:1.6}
+
+/* ---------- avslutning ---------- */
+.ctaCard{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:64px}
+.cta{position:relative;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+.cta h2{margin-bottom:14px}
+.cta p{font-size:18px;line-height:1.6;max-width:560px}
+
+/* ---------- hero-illustrasjon: kalender ---------- */
+.hero{padding-bottom:64px}
+.heroVisual{position:relative;max-width:940px;margin:0 auto 104px}
+.cal{position:relative;background:var(--calBg);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:0 50px 90px -40px var(--shadow)}
+.calTop{display:flex;align-items:center;gap:14px;padding:14px 18px;border-bottom:1px solid var(--calLine);background:var(--calTop)}
+.calTop .tl{display:flex;gap:6px}.calTop .tl i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.16)}
+.calTop b{font:600 14px "Geist",sans-serif;color:var(--calInk)}
+.calTop .wk{margin-left:auto;font:500 12px "Geist Mono",monospace;color:var(--calMuted)}
+.calGrid{display:grid;grid-template-columns:58px repeat(5,1fr);grid-template-rows:34px repeat(6,50px);position:relative}
+.calGrid .h{font:500 11px "Geist Mono",monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--calMuted);
+  display:flex;align-items:center;justify-content:center;border-bottom:1px solid var(--calLine)}
+.calGrid .t{font:500 11px "Geist Mono",monospace;color:var(--calTime);padding:6px 10px 0 0;text-align:right}
+.calGrid .c{border-left:1px solid var(--calLine);border-bottom:1px solid var(--calLine)}
+.ev{margin:4px;border-radius:7px;padding:7px 9px;font-size:12px;line-height:1.25;overflow:hidden;z-index:1;text-align:left}
+.ev b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev span{display:block;font-size:11px;opacity:.75;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ev.std{border-left:3px solid var(--c);border-radius:4px 7px 7px 4px}
+.ev.t-kontroll{--c:#8C9EFF;background:rgba(140,158,255,.15);color:#C9D1FF}
+.ev.t-tannrens{--c:#4FD1A1;background:rgba(79,209,161,.14);color:#AEEDD5}
+.ev.t-fylling{--c:#F5B85B;background:rgba(245,184,91,.15);color:#F9DBAA}
+.ev.t-akutt{--c:#F2787F;background:rgba(242,120,127,.16);color:#F9BCC0}
+.ev.t-rotfylling{--c:#C592F5;background:rgba(197,146,245,.15);color:#E1C8FA}
+.ev.imp{background:linear-gradient(135deg,var(--impA),var(--impB));color:var(--impInk);box-shadow:0 8px 22px -8px var(--impGlow);
+  transform:scale(.6);opacity:0;transition:transform .6s var(--ease),opacity .4s}
+.ev.imp.show{transform:scale(1);opacity:1}
+.ev.imp.flash{animation:flash 1.4s var(--ease)}
+@keyframes flash{0%{box-shadow:0 0 0 0 var(--impGlow)}100%{box-shadow:0 0 0 14px transparent}}
+
+.notes{position:absolute;right:-64px;top:70px;width:280px;display:flex;flex-direction:column;gap:10px;z-index:3}
+.note{display:flex;gap:12px;align-items:flex-start;text-align:left;background:var(--cardBg);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+  box-shadow:0 24px 44px -24px var(--shadow);transform:translateY(-10px) scale(.96);opacity:0;
+  transition:transform .55s var(--ease),opacity .45s}
+.note.show{transform:none;opacity:1}
+.note.old{transform:scale(.94);transform-origin:top right}
+.note.old b{color:var(--muted)}
+.note.old .ic{filter:saturate(.2);opacity:.6}
+.note .ic{flex:none;width:30px;height:30px;border-radius:8px;background:var(--calBg);border:1px solid var(--line);display:grid;place-items:center}
+.note .ic i{width:9px;height:9px;border-radius:50%;background:var(--impA)}
+.note.ok .ic{background:var(--impA);border-color:var(--impA)}
+.note.ok .ic i{background:var(--impInk)}
+.note b{display:block;font-size:13px;color:var(--ink)}
+.note span{display:block;font-size:12.5px;color:var(--muted)}
+.note em{margin-left:auto;font:500 11px "Geist Mono",monospace;color:var(--faint);font-style:normal}
+
+.monthCard{position:absolute;left:-40px;bottom:-34px;width:230px;z-index:3;text-align:left;background:var(--cardBg);border:1px solid var(--line);
+  border-radius:12px;padding:14px 16px 12px;box-shadow:0 24px 44px -24px var(--shadow)}
+.monthCard b{display:block;font-size:13px;color:var(--ink)}
+.monthCard span{display:block;font-size:12px;color:var(--muted);margin-bottom:10px}
+.mBars{display:flex;align-items:flex-end;gap:8px;height:54px}
+.mBars i{flex:1;border-radius:3px 3px 0 0;background:color-mix(in srgb,var(--impA) 45%,transparent);height:8%;transition:height .8s var(--ease)}
+.mBars i.cur{background:linear-gradient(to top,var(--impA),var(--impB))}
+.mLbl{display:flex;gap:8px;margin-top:6px}.mLbl em{flex:1;text-align:center;font:500 10px "Geist Mono",monospace;color:var(--faint);font-style:normal}
+
+/* ---------- hero: tekst venstre, kalender høyre ---------- */
+.heroGrid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:72px;align-items:center;padding:92px 0 118px}
+.heroGrid .hero{text-align:left;max-width:none;margin:0;padding:0}
+.heroGrid .hero h1{margin:22px 0 24px;font-size:clamp(40px,3.6vw,54px);max-width:none}
+.heroGrid .hero p.lead{margin:0 0 38px;max-width:none}
+.heroGrid .heroVisual{max-width:none;margin:0}
+.heroGrid .notes{right:-30px;top:auto;bottom:-48px;width:272px}
+.heroGrid .monthCard{left:-44px;bottom:-44px;width:214px}
+
+@media (max-width:1180px){
+  .heroGrid{grid-template-columns:1fr;gap:56px;padding:80px 0 104px}
+  .heroGrid .hero{text-align:center;max-width:760px;margin:0 auto}
+  .heroGrid .hero p.lead{margin:0 auto 38px}
+  .heroGrid .heroVisual{max-width:780px;width:100%;margin:0 auto}
+  .heroGrid .notes{right:-20px}
+  .heroGrid .hero h1{font-size:clamp(38px,5vw,54px)}
+}
+@media (max-width:820px){
+  .heroGrid{gap:24px;padding:26px 0 84px}
+  .heroGrid .hero h1{font-size:33px;line-height:1.08;margin:12px auto 12px}
+  .heroGrid .hero p.lead{font-size:17px;margin:0 auto 18px}
+  .heroGrid .hero .btn{min-height:50px;padding:14px 20px}
+  .calTop{padding:9px 14px}
+  .calTop b{font-size:13px}
+  .heroGrid .calGrid{grid-template-columns:40px repeat(4,1fr);grid-template-rows:28px repeat(4,40px)}
+  .heroGrid .calGrid .t{padding-right:5px;font-size:9.5px}
+  .heroGrid .ev{margin:3px;padding:5px 6px;font-size:10.5px}
+  .heroGrid .notes{position:absolute;left:14px;right:14px;top:auto;bottom:-52px;width:auto;margin:0}
+  .heroGrid .note.old{display:none}
+  .heroGrid .note{padding:10px 12px}
+  .offerCta .btn{width:100%}
+}
+
+/* ---------- case ---------- */
+.caseTop{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:72px;align-items:center}
+.caseEy{color:var(--muted);margin-bottom:22px}
+.caseH{font-size:clamp(44px,4.8vw,74px);line-height:1;letter-spacing:-.04em;hyphens:manual}
+.caseImg{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:5/6;background:var(--surface);box-shadow:0 40px 80px -50px var(--shadow)}
+.caseImg img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1.6s var(--ease)}
+.caseImg.in img{transform:none}
+.caseBar{margin-top:56px;background:var(--block);border:1px solid var(--blockLine);border-radius:16px;overflow:hidden;display:grid;grid-template-columns:repeat(3,1fr) minmax(0,1.15fr)}
+.stat{position:relative;padding:38px 40px 36px;border-left:1px solid var(--blockLine)}
+.stat:first-child{border-left:0}
+.stat b{display:block;font-family:"Geist Mono",monospace;font-size:clamp(34px,3.3vw,52px);font-weight:500;line-height:1;
+  color:var(--blockAccent);letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin-bottom:14px;white-space:nowrap}
+.stat span{font-size:14.5px;color:var(--blockBody)}
+.stat.fl:not(.end) b{color:var(--blockInk)}
+.stat.cost{background:color-mix(in srgb,var(--blockInk) 4%,transparent)}
+.stat.fl:not(.end)::after{content:"\2192";position:absolute;z-index:2;right:-15px;top:50%;margin-top:-15px;width:30px;height:30px;
+  border-radius:50%;background:var(--block);border:1px solid color-mix(in srgb,var(--blockInk) 22%,transparent);color:var(--blockAccent);
+  font:600 14px/28px "Geist",sans-serif;text-align:center}
+@media (max-width:1040px){
+  .caseTop{gap:48px}
+  .caseBar{grid-template-columns:repeat(3,1fr)}
+  .stat.cost{grid-column:1/-1;border-left:0;border-top:1px solid var(--blockLine)}
+}
+@media (max-width:820px){
+  .caseTop{grid-template-columns:1fr;gap:28px}
+  .caseH{font-size:clamp(36px,10vw,56px)}
+  .caseImg{aspect-ratio:4/3}
+  .caseBar{grid-template-columns:1fr;margin-top:32px}
+  .stat{padding:30px 22px;border-left:0;border-top:1px solid var(--blockLine)}
+  .stat b{font-size:36px;margin-bottom:8px}
+  .stat:first-child{border-top:0}
+  .stat.fl:not(.end)::after{content:"\2193";right:auto;top:auto;left:22px;bottom:-15px;margin-top:0}
+}
+
+footer{border-top:1px solid var(--line);padding:38px 0 46px;font-size:14px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:underline}
+footer .brand .word{font-size:13px;color:var(--muted)}
+
+@media (max-width:1040px){ :root{--pad:48px} }
+@media (max-width:820px){
+  :root{--pad:20px}
+  section{padding:68px 0}
+  .hero{padding:72px 0 74px}
+  .two,.steps{grid-template-columns:1fr;gap:28px}
+  .steps{gap:44px}
+  .panel{padding:30px 22px 26px}
+  .chart{gap:4px;height:96px}
+  .ctaCard{padding:40px 22px}
+  .cta{grid-template-columns:1fr;gap:24px}
+  .hero .btn,.cta .btn{width:100%}
+  .offer{padding:76px 0 80px}
+  .offer .bigDia{width:300px;height:300px;margin:-150px 0 0 -150px}
+  .offer .bigDia.two{display:none}
+  .blob.a{width:340px;height:340px}.blob.b{width:300px;height:300px}
+  .heroVisual{margin-bottom:64px}
+  .calGrid{grid-template-columns:36px repeat(5,1fr);grid-template-rows:30px repeat(6,44px)}
+  .calGrid .t{padding-right:4px;font-size:9.5px}
+  .ev{margin:2px;padding:5px 5px;font-size:10px}
+  .ev span{display:none}
+  .notes{position:relative;right:auto;top:auto;width:auto;margin-top:14px}
+  .note.old:nth-child(n+2){display:none}
+  .monthCard{display:none}
+  .floatDia{display:none}
+  .nav{gap:12px}
+  .navR{gap:8px}
+  .nav .btn{padding:10px 14px}
+  .brand .word{font-size:16px}
+}
+@media (max-width:380px){
+  .brand .word{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+  .hl path{stroke-dashoffset:0}
+  .step::after{transform:scaleX(1)}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="spr" viewBox="0 0 100 100">
+    <g style="stroke:var(--symLine)" stroke-width="2.4" stroke-linecap="round"><line x1="50" y1="50" x2="72" y2="50"/><line x1="50" y1="50" x2="61" y2="69.05"/><line x1="50" y1="50" x2="39" y2="69.05"/><line x1="50" y1="50" x2="28" y2="50"/><line x1="50" y1="50" x2="39" y2="30.95"/><line x1="50" y1="50" x2="61" y2="30.95"/></g>
+    <g style="stroke:var(--symLine)" stroke-width="1.6" stroke-linecap="round" opacity=".55"><line x1="72" y1="50" x2="88.64" y2="39.65"/><line x1="72" y1="50" x2="88.64" y2="60.35"/><line x1="61" y1="69.05" x2="78.28" y2="78.28"/><line x1="61" y1="69.05" x2="60.35" y2="88.64"/><line x1="39" y1="69.05" x2="39.65" y2="88.64"/><line x1="39" y1="69.05" x2="21.72" y2="78.28"/><line x1="28" y1="50" x2="11.36" y2="60.35"/><line x1="28" y1="50" x2="11.36" y2="39.65"/><line x1="39" y1="30.95" x2="21.72" y2="21.72"/><line x1="39" y1="30.95" x2="39.65" y2="11.36"/><line x1="61" y1="30.95" x2="60.35" y2="11.36"/><line x1="61" y1="30.95" x2="78.28" y2="21.72"/></g>
+    <g style="fill:var(--symNode)"><circle cx="72" cy="50" r="4.6"/><circle cx="61" cy="69.05" r="4.6"/><circle cx="39" cy="69.05" r="4.6"/><circle cx="28" cy="50" r="4.6"/><circle cx="39" cy="30.95" r="4.6"/><circle cx="61" cy="30.95" r="4.6"/></g>
+    <g style="fill:var(--symNode)" opacity=".7"><circle cx="88.64" cy="39.65" r="3"/><circle cx="88.64" cy="60.35" r="3"/><circle cx="78.28" cy="78.28" r="3"/><circle cx="60.35" cy="88.64" r="3"/><circle cx="39.65" cy="88.64" r="3"/><circle cx="21.72" cy="78.28" r="3"/><circle cx="11.36" cy="60.35" r="3"/><circle cx="11.36" cy="39.65" r="3"/><circle cx="21.72" cy="21.72" r="3"/><circle cx="39.65" cy="11.36" r="3"/><circle cx="60.35" cy="11.36" r="3"/><circle cx="78.28" cy="21.72" r="3"/></g>
+    <circle cx="50" cy="50" r="8" style="fill:var(--symCore)"/>
+  </symbol>
+</svg>
+
+<div class="progress" id="progress"></div>
+
+<div class="topbar" id="topbar">
+  <div class="wrap">
+  <div class="nav">
+    <a class="brand" href="/" aria-label="Virnes">
+      <svg class="sym" width="34" height="34" viewBox="0 0 100 100" aria-hidden="true"><use href="#spr"/></svg>
+      <span class="word" aria-hidden="true">VIRNES</span>
+    </a>
+    <div class="navR">
+      <button class="themeBtn" id="themeBtn" type="button" aria-label="Bytt til lyst tema">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <a class="btn" href="[BOOKINGLENKE]">Book et møte <span class="arr">→</span></a>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="heroSec" id="hero">
+  <div class="heroBg" aria-hidden="true">
+    <div class="blob a"></div><div class="blob b"></div>
+    <div class="dots"></div>
+    <div class="follow"></div>
+    <i class="floatDia d1"></i><i class="floatDia d2"></i><i class="floatDia d3"></i>
+  </div>
+  <div class="wrap">
+    <div class="heroGrid">
+    <div class="hero">
+      <div class="reveal">
+        <span class="eyebrow"><span class="pulse"></span>Tannimplantater</span>
+        <h1>Nye implantatpasienter<br><span class="hl">hver måned.<svg viewBox="0 0 300 20" preserveAspectRatio="none" aria-hidden="true"><path d="M4 14 C 70 5, 170 3, 296 9"/></svg></span></h1>
+        <p class="lead">Vi henter dem inn. Du behandler dem.</p>
+        <a class="btn" href="[BOOKINGLENKE]">Book et raskt møte <span class="arr">→</span></a>
+      </div>
+    </div>
+    <div class="heroVisual reveal" aria-hidden="true">
+      <div class="cal">
+        <div class="calTop"><span class="tl"><i></i><i></i><i></i></span><b>Kalender</b><span class="wk">Denne uken</span></div>
+        <div class="calGrid" id="calGrid"></div>
+      </div>
+      <div class="notes" id="notes"></div>
+      <div class="monthCard">
+        <b>Implantatkonsultasjoner</b><span>Per uke denne måneden</span>
+        <div class="mBars" id="mBars"><i></i><i></i><i></i><i class="cur"></i></div>
+        <div class="mLbl"><em>U1</em><em>U2</em><em>U3</em><em>U4</em></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="offer">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="bigDia" aria-hidden="true"></div><div class="bigDia two" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Tilbudet</span>
+      <h2>Får du ikke resultater, <span class="hi">betaler du ingenting.</span></h2>
+      <p>Usikker på om dette funker for din klinikk? Første måned betaler du oss ingenting hvis du ikke er fornøyd med resultatene. Det eneste du betaler er Google-annonsene.</p>
+      <div class="offerCta"><a class="btn light" href="[BOOKINGLENKE]">Book et møte <span class="arr">→</span></a></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2 class="reveal" style="max-width:600px;margin-bottom:52px">Fra tilfeldig til forutsigbart</h2>
+    <div class="two stagger">
+      <div class="panel off reveal">
+        <span class="eyebrow">I dag</span>
+        <h3>Tre pasienter i mars. Ingen i april.</h3>
+        <p>Ingen vet hvorfor. Stolen som tjener mest, står tom mest.</p>
+        <div class="chart" data-vals="1,0,3,0,1,0,0,2,0,1,0,1" data-max="6" data-hot="2,3" aria-hidden="true"></div>
+      </div>
+      <div class="panel on reveal">
+        <span class="eyebrow">Med oss</span>
+        <h3>Nye pasienter hver måned.</h3>
+        <p>Folk leter etter implantat hele året — vi sørger for at de finner dere. Du ser nøyaktig hvor mange som tar kontakt.</p>
+        <div class="chart" data-vals="4,5,5,4,5,6,5,5,6,5,6,6" data-max="6" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mistbg" id="veien">
+  <div class="wrap">
+    <h2 class="reveal" style="max-width:600px">Veien dit</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <span class="num">01</span>
+        <h3>Kort møte</h3>
+        <p>20 min. Du får vite om det er nok pasienter å hente i din by.</p>
+      </div>
+      <div class="step reveal">
+        <span class="num">02</span>
+        <h3>Vi setter opp alt</h3>
+        <p>Du gjør ingenting. Klart innen en uke.</p>
+      </div>
+      <div class="step reveal">
+        <span class="num">03</span>
+        <h3>Pasientene kommer</h3>
+        <p>Din eneste jobb er å ta imot dem.</p>
+      </div>
+    </div>
+    <div style="margin-top:56px;padding-top:32px;border-top:1px solid var(--line);display:flex;align-items:center;gap:24px;flex-wrap:wrap">
+      <a class="btn" href="[BOOKINGLENKE]">Book et møte <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="case">
+  <div class="wrap">
+    <div class="caseTop">
+      <div class="reveal">
+        <span class="eyebrow caseEy">Tannklinikk på Østlandet</span>
+        <h2 class="caseH">Femten nye implantat&shy;pasienter på én måned.</h2>
+      </div>
+      <figure class="caseImg reveal"><img src="/case-klinikk.jpg" alt="Behandlingsrom på tannklinikk" width="880" height="1100" loading="lazy"></figure>
+    </div>
+    <div class="caseBar reveal">
+      <div class="stat fl"><b data-count="81">81</b><span>Tok kontakt</span></div>
+      <div class="stat fl"><b data-count="63">63</b><span>Booket konsultasjon</span></div>
+      <div class="stat fl end"><b data-count="15" data-suffix="+">15+</b><span>Ble implantatpasienter</span></div>
+      <div class="stat cost"><b data-count="700" data-prefix="&lt; " data-suffix=" kr" data-down="1">&lt; 700 kr</b><span>Annonsekost per implantatpasient</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="ctaCard reveal">
+      <div class="cta">
+        <div>
+          <h2>Er byen din ledig?</h2>
+          <p>20 minutter. Du får vite hvor mange som leter etter implantat der du holder til, og hva det er verdt for klinikken. Tallene er dine uansett.</p>
+        </div>
+        <a class="btn" href="[BOOKINGLENKE]">Book et møte <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <div class="brand">
+      <svg class="sym" width="22" height="22" viewBox="0 0 100 100" aria-hidden="true"><use href="#spr"/></svg>
+      <span class="word" aria-hidden="true">VIRNES</span>
+      <span>Questa Scale AS · org.nr. 930 208 469</span>
+    </div>
+    <span>thomas@questascale.com</span>
+    <span><a href="/personvern.html" data-keep-theme>Personvern</a></span>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var MONTHS = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+
+  // Tema: mørkt er standard, knappen bytter. Ingenting lagres i nettleseren.
+  var root = document.documentElement, tbtn = document.getElementById('themeBtn'), meta = document.querySelector('meta[name="theme-color"]');
+  function applyTheme(t){
+    root.setAttribute('data-theme', t);
+    var light = t === 'light';
+    tbtn.setAttribute('aria-label', light ? 'Bytt til mørkt tema' : 'Bytt til lyst tema');
+    if (meta) meta.setAttribute('content', light ? '#FFFFFF' : '#12161B');
+    [].forEach.call(document.querySelectorAll('[data-keep-theme]'), function(a){
+      a.setAttribute('href', a.getAttribute('href').split('?')[0] + (light ? '?tema=lys' : ''));
+    });
+  }
+  applyTheme(root.getAttribute('data-theme') || 'dark');
+  tbtn.addEventListener('click', function(){ applyTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light'); });
+
+  // Søylediagrammene
+  [].forEach.call(document.querySelectorAll('.chart'), function(ch){
+    var vals = ch.dataset.vals.split(',').map(Number), max = +ch.dataset.max;
+    var hot = (ch.dataset.hot || '').split(',').filter(Boolean).map(Number);
+    ch.innerHTML = vals.map(function(v,i){
+      return '<div class="col' + (hot.indexOf(i) > -1 ? ' hot' : '') + '"><div class="bar' + (v === 0 ? ' zero' : '') +
+        '" data-h="' + (v / max * 100) + '" style="transition-delay:' + (i * 55) + 'ms"></div><span class="m">' + MONTHS[i] + '</span></div>';
+    }).join('');
+  });
+  function growBars(root){
+    [].forEach.call(root.querySelectorAll('.bar'), function(b){ b.style.height = 'calc((100% - 22px) * ' + (b.dataset.h / 100) + ')'; });
+  }
+
+  // Telling opp
+  function countUp(root){
+    [].forEach.call(root.querySelectorAll('[data-count]'), function(el){
+      var to = +el.dataset.count, pre = el.dataset.prefix || '', suf = el.dataset.suffix || '';
+      var from = el.dataset.down ? to * 3 : 0;
+      if (reduce) { el.textContent = pre + to + suf; return; }
+      var t0 = null, dur = 1400;
+      function tick(t){
+        if (!t0) t0 = t;
+        var k = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+        el.textContent = pre + Math.round(from + (to - from) * e) + suf;
+        if (k < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+
+  function onIn(el){
+    el.classList.add('in');
+    if (el.querySelector('.chart')) growBars(el);
+    if (el.querySelector('[data-count]')) countUp(el);
+  }
+
+  // Innglidning ved scroll
+  var els = [].slice.call(document.querySelectorAll('.reveal'));
+  function showAll(){ els.forEach(onIn); }
+  if (!('IntersectionObserver' in window) || reduce) { showAll(); }
+  else {
+    try {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if (e.isIntersecting) { onIn(e.target); io.unobserve(e.target); } });
+      }, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
+      var vh = window.innerHeight || 800;
+      els.forEach(function(el){ if (el.getBoundingClientRect().top < vh * 0.9) onIn(el); else io.observe(el); });
+    } catch (err) { showAll(); }
+    setTimeout(function(){ if (!document.querySelector('.reveal.in')) showAll(); }, 1200);
+  }
+
+  // Toppfelt og lesefremdrift
+  var bar = document.getElementById('progress'), top = document.getElementById('topbar');
+  function onScroll(){
+    var h = document.documentElement.scrollHeight - innerHeight;
+    bar.style.transform = 'scaleX(' + (h > 0 ? scrollY / h : 0) + ')';
+    top.classList.toggle('scrolled', scrollY > 10);
+  }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+
+  // Kalenderen i heroen
+  (function(){
+    var grid = document.getElementById('calGrid'); if (!grid) return;
+    var notes = document.getElementById('notes'), bars = [].slice.call(document.querySelectorAll('#mBars i'));
+    var DAYS = ['Man','Tir','Ons','Tor','Fre'], TIMES = ['09:00','10:00','11:00','12:00','13:00','14:00'];
+    var DAYNAME = ['Mandag','Tirsdag','Onsdag','Torsdag','Fredag'];
+    var STD_ALL = [[0,0,'Kontroll'],[0,3,'Tannrens'],[1,2,'Fylling'],[2,0,'Kontroll'],[3,2,'Akutt'],[4,1,'Tannrens'],[4,4,'Rotfylling'],[2,5,'Kontroll'],[1,4,'Tannrens'],[4,3,'Kontroll'],[1,5,'Fylling'],[3,5,'Tannrens']];
+    var IMP_ALL = [[1,1],[3,0],[2,3],[0,2],[4,2],[3,3],[2,1],[0,1],[1,3],[3,1]];
+    var BASE = [46, 58, 64, 10];
+    var mq = matchMedia('(max-width:820px)'), gen = 0, timers = [];
+    function later(fn, ms){ var g = gen; timers.push(setTimeout(function(){ if (g === gen) fn(); }, ms)); }
+    function setBars(k, n){ bars.forEach(function(b, i){ b.style.height = (i < 3 ? BASE[i] : Math.min(92, BASE[3] + k * (80 / n))) + '%'; }); }
+    function note(cls, title, sub){
+      var n = document.createElement('div'); n.className = 'note ' + cls;
+      n.innerHTML = '<span class="ic"><i></i></span><div><b>' + title + '</b><span>' + sub + '</span></div><em>nå</em>';
+      [].forEach.call(notes.children, function(o){ o.classList.add('old'); var t = o.querySelector('em'); if (t) t.remove(); });
+      notes.insertBefore(n, notes.firstChild);
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ n.classList.add('show'); }); });
+      while (notes.children.length > 2) notes.removeChild(notes.lastChild);
+    }
+    function build(){
+      gen++; timers.forEach(clearTimeout); timers = [];
+      var nd = mq.matches ? 4 : 5, nr = mq.matches ? 4 : 6;
+      var inView = function(e){ return e[0] < nd && e[1] < nr; };
+      var STD = STD_ALL.filter(inView), IMP = IMP_ALL.filter(inView);
+      var html = '<div></div>' + DAYS.slice(0, nd).map(function(d){ return '<div class="h">' + d + '</div>'; }).join('');
+      for (var r = 0; r < nr; r++) {
+        html += '<div class="t" style="grid-row:' + (r + 2) + ';grid-column:1">' + TIMES[r] + '</div>';
+        for (var c = 0; c < nd; c++) html += '<div class="c" style="grid-row:' + (r + 2) + ';grid-column:' + (c + 2) + '"></div>';
+      }
+      STD.forEach(function(e){ html += '<div class="ev std t-' + e[2].toLowerCase() + '" style="grid-column:' + (e[0] + 2) + ';grid-row:' + (e[1] + 2) + '"><b>' + e[2] + '</b></div>'; });
+      IMP.forEach(function(e, i){ html += '<div class="ev imp" id="imp' + i + '" style="grid-column:' + (e[0] + 2) + ';grid-row:' + (e[1] + 2) + '"><b>Implantat</b><span>Konsultasjon</span></div>'; });
+      grid.innerHTML = html; notes.innerHTML = '';
+
+      if (reduce) {
+        IMP.forEach(function(e, i){ document.getElementById('imp' + i).classList.add('show'); });
+        setBars(IMP.length, IMP.length);
+        note('ok', 'Konsultasjon booket', DAYNAME[IMP[0][0]] + ' ' + TIMES[IMP[0][1]]);
+        return;
+      }
+      var i = 0; setBars(0, IMP.length);
+      function step(){
+        if (i >= IMP.length) {
+          later(function(){
+            IMP.forEach(function(e, k){ document.getElementById('imp' + k).classList.remove('show'); });
+            notes.innerHTML = ''; i = 0; setBars(0, IMP.length); later(step, 1400);
+          }, 5000);
+          return;
+        }
+        var e = IMP[i], el = document.getElementById('imp' + i), k = i;
+        note('', 'Ny henvendelse', 'Implantat · vil ha konsultasjon');
+        later(function(){
+          el.classList.add('show', 'flash');
+          later(function(){ el.classList.remove('flash'); }, 1500);
+          note('ok', 'Konsultasjon booket', DAYNAME[e[0]] + ' ' + TIMES[e[1]]);
+          setBars(k + 1, IMP.length);
+        }, 2300);
+        i++; later(step, 5400);
+      }
+      later(step, 1600);
+    }
+    build();
+    if (mq.addEventListener) mq.addEventListener('change', build);
+  })();
+
+  // Lys som følger musen i heroen
+  var hero = document.getElementById('hero');
+  if (!reduce && matchMedia('(pointer:fine)').matches) {
+    hero.addEventListener('mousemove', function(e){
+      var r = hero.getBoundingClientRect();
+      hero.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      hero.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  }
+})();
+</script>
+</body>
+</html>
