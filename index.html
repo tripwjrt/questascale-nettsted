@@ -22,7 +22,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232B3034'/%3E%3Cg stroke='%238EC5BE' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M50 50L74 50M50 50L62 70.8M50 50L38 70.8M50 50L26 50M50 50L38 29.2M50 50L62 29.2'/%3E%3C/g%3E%3Cg fill='%238EC5BE'%3E%3Ccircle cx='74' cy='50' r='7'/%3E%3Ccircle cx='62' cy='70.8' r='7'/%3E%3Ccircle cx='38' cy='70.8' r='7'/%3E%3Ccircle cx='26' cy='50' r='7'/%3E%3Ccircle cx='38' cy='29.2' r='7'/%3E%3Ccircle cx='62' cy='29.2' r='7'/%3E%3C/g%3E%3Ccircle cx='50' cy='50' r='10' fill='%23F7F5F0'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300&family=Geist+Mono:wght@400;500&family=Red+Hat+Display:wght@500;600;700&family=Red+Hat+Text:wght@400;500;600&display=swap">
 <style>
 html{scroll-behavior:smooth;scroll-padding-top:84px;background:#F7F5F0}
 body{margin:0;background:#F7F5F0}
@@ -31,20 +31,20 @@ html:has(.site[data-theme="dark"]),body:has(.site[data-theme="dark"]){background
   --accent:#6FAFA7;--accentText:#2B3034;--accentSoft:rgba(142,197,190,.32);--mark:rgba(142,197,190,.62);--btnBg:#2B3034;--btnInk:#FFFFFF;
   --block:#2B3034;--blockInk:#F7F5F0;--blockBody:#C4C8CB;--blockAccent:#8EC5BE;--blockLine:rgba(247,245,240,.1);
   --symLine:#2B3034;--symNode:#2B3034;--symCore:#8EC5BE;--shadow:rgba(29,30,32,.22);--glow:rgba(142,197,190,.28);
-  background:var(--bg);color:var(--ink);font-family:"Geist",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;min-height:100%;overflow-x:hidden}
+  background:var(--bg);color:var(--ink);font-family:"Red Hat Text",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5;min-height:100%;overflow-x:hidden}
 .site[data-theme="dark"]{--bg:#1A1D1F;--bg2:#151719;--surface:#212528;--surface2:#262A2E;--line:#2E3337;--ink:#F2F1EC;--body:#B3B7BA;--muted:#979CA0;--faint:#7E8388;
   --accent:#8EC5BE;--accentText:#8EC5BE;--accentSoft:rgba(142,197,190,.14);--mark:rgba(142,197,190,.32);--btnBg:#8EC5BE;--btnInk:#1A1D1F;
   --block:#121416;--blockInk:#F2F1EC;--blockBody:#B3B7BA;--blockAccent:#8EC5BE;--blockLine:rgba(242,241,236,.09);
   --symLine:#8EC5BE;--symNode:#8EC5BE;--symCore:#F2F1EC;--shadow:rgba(0,0,0,.55);--glow:rgba(142,197,190,.10)}
 .site *{box-sizing:border-box}
-.site h1,.site h2,.site h3{margin:0;font-weight:500;letter-spacing:-.03em;color:var(--ink);text-wrap:balance}
+.site h1,.site h2,.site h3{margin:0;font-family:"Red Hat Display",sans-serif;font-weight:600;letter-spacing:-.025em;color:var(--ink);text-wrap:balance}
 .site p{margin:0;color:var(--body);text-wrap:pretty}
 .site a{color:var(--accentText);text-decoration:none}
 .wrap{max-width:1200px;margin:0 auto;padding:0 40px}
 .eye{display:inline-flex;align-items:center;gap:10px;font-family:"Geist Mono",monospace;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accentText)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accentSoft)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:10px;border:0;cursor:pointer;
-  background:var(--btnBg);color:var(--btnInk)!important;font:600 16px "Geist",sans-serif;transition:transform .25s,box-shadow .25s}
+  background:var(--btnBg);color:var(--btnInk)!important;font:600 16px "Red Hat Text",sans-serif;transition:transform .25s,box-shadow .25s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px -14px var(--shadow)}
 .btn.ghost{background:transparent;color:var(--ink)!important;border:1px solid var(--line)}
 .btn.block{background:var(--blockAccent);color:#1A1D1F!important}
@@ -55,7 +55,7 @@ html:has(.site[data-theme="dark"]),body:has(.site[data-theme="dark"]){background
 .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .navIn{display:flex;align-items:center;gap:28px;height:72px}
 .brand{display:flex;align-items:center;gap:12px}
-.word{font-weight:300;font-size:19px;letter-spacing:.3em;margin-right:-.3em;color:var(--ink)}
+.word{font-family:"Geist",sans-serif;font-weight:300;font-size:19px;letter-spacing:.3em;margin-right:-.3em;color:var(--ink)}
 .links{display:flex;gap:26px;margin-left:auto;font-size:15px}
 .links a{color:var(--body)!important}
 .links a:hover{color:var(--ink)!important}
@@ -65,18 +65,18 @@ html:has(.site[data-theme="dark"]),body:has(.site[data-theme="dark"]){background
 
 /* hero */
 .hero{position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:900px;height:900px;right:-260px;top:-320px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%);pointer-events:none}
-.heroGrid{position:relative;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center;padding-top:96px;padding-bottom:104px}
-.hero h1{font-size:clamp(40px,4.4vw,64px);line-height:1.02;letter-spacing:-.04em;margin:22px 0 22px}
+.hero:before{content:"";position:absolute;width:1000px;height:1000px;left:50%;margin-left:-500px;top:-520px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%);pointer-events:none}
+.heroGrid{position:relative;display:flex;justify-content:center;padding-top:120px;padding-bottom:128px}
+.heroIn{max-width:880px;text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero h1{font-size:clamp(40px,5vw,70px);line-height:1.05;letter-spacing:-.018em;margin:0 0 26px}
 .hero h1 em{font-style:normal;color:var(--accentText);background:linear-gradient(transparent 66%,var(--mark) 66%)}
-.lead{font-size:20px;line-height:1.55;max-width:34ch}
-.ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
-.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}
+.lead{font-size:21px;line-height:1.55;max-width:40ch}
+.ctaRow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:38px}
 
 /* AI-vindu */
 .ai{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 50px 90px -50px var(--shadow);overflow:hidden}
 .aiTop{display:flex;align-items:center;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line);background:var(--surface2);flex-wrap:wrap}
-.tab{height:32px;padding:0 12px;border-radius:8px;border:0;background:transparent;color:var(--muted);font:500 13px "Geist",sans-serif;cursor:pointer}
+.tab{height:32px;padding:0 12px;border-radius:8px;border:0;background:transparent;color:var(--muted);font:500 13px "Red Hat Text",sans-serif;cursor:pointer}
 .tab.on{background:var(--bg);color:var(--ink);box-shadow:0 0 0 1px var(--line)}
 .aiBody{padding:24px 24px 22px;display:flex;flex-direction:column;gap:16px}
 .ask{align-self:flex-end;max-width:86%;background:var(--accentSoft);color:var(--ink);border-radius:14px 14px 4px 14px;padding:12px 16px;font-size:15px}
@@ -158,7 +158,7 @@ section.s{padding:112px 0}
 .offer > *{position:relative}
 .form{display:flex;flex-direction:column;gap:14px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:24px}
 .form label{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted);font-weight:500}
-.form input{height:48px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:0 14px;font:400 16px "Geist",sans-serif}
+.form input{height:48px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:0 14px;font:400 16px "Red Hat Text",sans-serif}
 .form input:focus{outline:2px solid var(--accent);outline-offset:1px}
 .form .btn{width:100%;margin-top:4px}
 .fine{font-size:13px;color:var(--faint);text-align:center}
@@ -168,7 +168,7 @@ section.s{padding:112px 0}
 /* FAQ */
 .faq{max-width:860px}
 .fq{border-bottom:1px solid var(--line)}
-.fq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:0;cursor:pointer;color:var(--ink);font:500 19px "Geist",sans-serif;text-align:left;letter-spacing:-.015em}
+.fq button{width:100%;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 0;background:none;border:0;cursor:pointer;color:var(--ink);font:600 19px "Red Hat Display",sans-serif;text-align:left;letter-spacing:-.01em}
 .fq .pl{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--accentText);transition:transform .25s}
 .fq .pl.open{transform:rotate(45deg)}
 .fq .fa{padding:0 50px 24px 0;font-size:16px;line-height:1.65;color:var(--body);animation:fadeUp .35s ease both}
@@ -196,7 +196,7 @@ section.s{padding:112px 0}
   .navIn{gap:12px}.navR{margin-left:auto}
   .nav .btn{padding:0 14px}
   .heroGrid,.shift,.offer{grid-template-columns:1fr}
-  .heroGrid{padding-top:48px;padding-bottom:72px;gap:40px}
+  .heroGrid{padding-top:64px;padding-bottom:80px}
   .lead{font-size:18px}
   section.s{padding:72px 0}
   .cards,.qs,.steps{grid-template-columns:1fr}
@@ -256,46 +256,12 @@ section.s{padding:112px 0}
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="wrap heroGrid">
-      <div>
-        <span class="eye"><span class="dot"></span>For tannklinikker</span>
+      <div class="heroIn">
         <h1>Pasientene spør AI hvilken tannlege de skal velge. <em>Sørg for at svaret er deg.</em></h1>
         <p class="lead">Flere nye pasienter hver måned, fra ChatGPT, Google og annonsene, uten at du løfter en finger.</p>
         <div class="ctaRow">
           <a class="btn" href="#sjekk">Se hva AI sier om klinikken din →</a>
-          <a class="btn ghost" href="#case">Se resultatene</a>
         </div>
-        <div class="trust">
-          <span class="chip on">AEO</span><span class="chip on">GEO</span><span class="chip">SEO</span><span class="chip">Google Ads</span><span class="chip">Lokal synlighet</span>
-        </div>
-      </div>
-
-      <div class="ai" aria-label="Eksempel på et AI-svar">
-        <div class="aiTop">
-          <button type="button" class="tab on" data-eng="0" aria-pressed="true">ChatGPT</button>
-          <button type="button" class="tab" data-eng="1" aria-pressed="false">Google AI</button>
-          <button type="button" class="tab" data-eng="2" aria-pressed="false">Gemini</button>
-          <button type="button" class="tab" data-eng="3" aria-pressed="false">Perplexity</button>
-        </div>
-        <div class="aiBody">
-          <div class="ask">Hvilken tannklinikk i Drammen er best på implantater?</div>
-          
-            <div class="ans" data-ans="0"><span class="ansIc"><span class="dot"></span></span><p class="ansTx">For implantater i Drammen er det <b>Din Klinikk</b> som oftest anbefales. Pasienter trekker frem gratis første konsultasjon, tydelige priser og at de også tilbyr helkjeve (All-on-4).</p></div>
-            <div class="src" data-ans="0"><span class="me">dinklinikk.no</span><span>Google-omtaler</span><span>legelisten.no</span></div>
-          
-          
-            <div class="ans" data-ans="1" hidden><span class="ansIc"><span class="dot"></span></span><p class="ansTx"><strong style="color:var(--ink)">AI-oversikt:</strong> Flere klinikker i Drammen tilbyr implantater. <b>Din Klinikk</b> har best vurdering og en egen side med priser for implantat og helkjeve.</p></div>
-            <div class="src" data-ans="1" hidden><span class="me">dinklinikk.no/implantat</span><span>Google Maps</span></div>
-          
-          
-            <div class="ans" data-ans="2" hidden><span class="ansIc"><span class="dot"></span></span><p class="ansTx">Et trygt valg er <b>Din Klinikk</b> i Drammen sentrum. De er kjent for implantatbehandling, gratis første konsultasjon og god oppfølging etterpå.</p></div>
-            <div class="src" data-ans="2" hidden><span class="me">dinklinikk.no</span><span>Google-omtaler</span></div>
-          
-          
-            <div class="ans" data-ans="3" hidden><span class="ansIc"><span class="dot"></span></span><p class="ansTx"><b>Din Klinikk</b> [1] er den mest omtalte implantatklinikken i Drammen, med mange gode omtaler fra pasienter [2]. Første konsultasjon er gratis.</p></div>
-            <div class="src" data-ans="3" hidden><span class="me">[1] dinklinikk.no</span><span>[2] Google-omtaler</span></div>
-          
-        </div>
-        <div class="aiNote">ILLUSTRASJON · SLIK SKAL SVARET SE UT FOR DEG</div>
       </div>
     </div>
   </section>
@@ -492,13 +458,6 @@ section.s{padding:112px 0}
   setTheme(/[?&]tema=mork\b/.test(location.search)?'dark':'light');
   btn.addEventListener('click',function(){ setTheme(site.getAttribute('data-theme')==='light'?'dark':'light'); });
 
-  // AI-fanene
-  var tabs=[].slice.call(document.querySelectorAll('[data-eng]'));
-  tabs.forEach(function(t){ t.addEventListener('click',function(){
-    var i=t.getAttribute('data-eng');
-    tabs.forEach(function(x){ var on=x===t; x.classList.toggle('on',on); x.setAttribute('aria-pressed',on?'true':'false'); });
-    [].forEach.call(document.querySelectorAll('[data-ans]'),function(a){ a.hidden = a.getAttribute('data-ans')!==i; });
-  }); });
 
   // Spørsmål og svar
   var qs=[].slice.call(document.querySelectorAll('[data-fq]'));
