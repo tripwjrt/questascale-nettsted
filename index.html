@@ -68,7 +68,9 @@ html:has(.site[data-theme="dark"]),body:has(.site[data-theme="dark"]){background
 .hero:before{content:"";position:absolute;width:1000px;height:1000px;left:50%;margin-left:-500px;top:-520px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 62%);pointer-events:none}
 .heroGrid{position:relative;display:flex;justify-content:center;padding-top:120px;padding-bottom:128px}
 .heroIn{max-width:880px;text-align:center;display:flex;flex-direction:column;align-items:center}
-.hero h1{font-size:clamp(40px,5vw,70px);line-height:1.05;letter-spacing:-.018em;margin:0 0 26px}
+.hero h1{font-size:clamp(42px,5.6vw,78px);line-height:1.04;font-weight:700;letter-spacing:-.02em;margin:0 0 26px;max-width:19ch}
+.btn.heroCta{background:#1F45FF;color:#FFFFFF!important;min-width:420px;min-height:62px;padding:0 34px;border-radius:999px;font-size:17px;font-weight:700}
+.btn.heroCta:hover{box-shadow:0 18px 36px -14px rgba(31,69,255,.55)}
 .hero h1 em{font-style:normal;color:var(--accentText);background:linear-gradient(transparent 66%,var(--mark) 66%)}
 .lead{font-size:21px;line-height:1.55;max-width:40ch}
 .ctaRow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:38px}
@@ -206,6 +208,7 @@ section.s{padding:112px 0}
   .st:first-child{border-top:0}
   .st.arr:after{content:"\2193";right:auto;left:30px;top:auto;bottom:-15px;margin:0}
   .ctaRow .btn{width:100%}
+  .btn.heroCta{min-width:0;font-size:16px}
   .final{padding:80px 0 88px}
 }
 @media (max-width:420px){ .word{display:none} }
@@ -257,10 +260,10 @@ section.s{padding:112px 0}
   <section class="hero" id="top">
     <div class="wrap heroGrid">
       <div class="heroIn">
-        <h1>Pasientene spør AI hvilken tannlege de skal velge. <em>Sørg for at svaret er deg.</em></h1>
+        <h1>Vil du at pasientene skal velge <em>din&nbsp;klinikk</em> først?</h1>
         <p class="lead">Flere nye pasienter hver måned, fra ChatGPT, Google og annonsene, uten at du løfter en finger.</p>
         <div class="ctaRow">
-          <a class="btn" href="#sjekk">Se hva AI sier om klinikken din →</a>
+          <a class="btn heroCta" href="#sjekk">Se hva AI sier om klinikken din →</a>
         </div>
       </div>
     </div>
